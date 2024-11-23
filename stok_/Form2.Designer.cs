@@ -39,7 +39,7 @@ namespace stok_
             this.label2 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_products_management = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.pnl_screen = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
@@ -91,7 +91,7 @@ namespace stok_
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.btn_products_management);
             this.panel2.Controls.Add(this.btn_user_management);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
@@ -168,22 +168,22 @@ namespace stok_
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btn_products_management
             // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 254);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 37);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Ürün Yönetimi   ";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_products_management.FlatAppearance.BorderSize = 0;
+            this.btn_products_management.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_products_management.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_products_management.ForeColor = System.Drawing.Color.White;
+            this.btn_products_management.Image = ((System.Drawing.Image)(resources.GetObject("btn_products_management.Image")));
+            this.btn_products_management.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_products_management.Location = new System.Drawing.Point(0, 254);
+            this.btn_products_management.Name = "btn_products_management";
+            this.btn_products_management.Size = new System.Drawing.Size(200, 37);
+            this.btn_products_management.TabIndex = 2;
+            this.btn_products_management.Text = "Ürün Yönetimi   ";
+            this.btn_products_management.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_products_management.UseVisualStyleBackColor = true;
+            this.btn_products_management.Click += new System.EventHandler(this.button1_Click);
             // 
             // pnl_screen
             // 
@@ -224,7 +224,7 @@ namespace stok_
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_products_management;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label2;

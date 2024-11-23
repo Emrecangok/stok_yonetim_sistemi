@@ -16,5 +16,10 @@ namespace stok_
         {
             InitializeComponent();
         }
+
+        private void denemeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

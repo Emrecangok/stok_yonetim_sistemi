@@ -124,3 +124,4 @@ C:\Users\Emrecan\Desktop\stok_yonetim_sistemi\stok_\obj\Debug\stok_.exe
 C:\Users\Emrecan\Desktop\stok_yonetim_sistemi\stok_\obj\Debug\stok_.pdb
 C:\Users\Emrecan\Desktop\stok_yonetim_sistemi\stok_\obj\Debug\stok_.usr_main_menu.resources
 C:\Users\Emrecan\Desktop\stok_yonetim_sistemi\stok_\obj\Debug\stok_.user_management.resources
+C:\Users\Emrecan\Desktop\stok_yonetim_sistemi\stok_\obj\Debug\stok_.products_management.resources

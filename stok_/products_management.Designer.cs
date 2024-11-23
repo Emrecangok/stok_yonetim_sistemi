@@ -33,6 +33,10 @@ namespace stok_
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txtbox_password = new System.Windows.Forms.TextBox();
@@ -43,13 +47,12 @@ namespace stok_
             this.btn_del = new System.Windows.Forms.Button();
             this.btn_update = new System.Windows.Forms.Button();
             this.btn_giris = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.denemeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -65,7 +68,7 @@ namespace stok_
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.dataGridView1);
-            this.panel1.Location = new System.Drawing.Point(107, 12);
+            this.panel1.Location = new System.Drawing.Point(107, 41);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(789, 235);
             this.panel1.TabIndex = 4;
@@ -102,6 +105,43 @@ namespace stok_
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(789, 189);
             this.panel2.TabIndex = 5;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label6.Location = new System.Drawing.Point(555, 32);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(80, 17);
+            this.label6.TabIndex = 21;
+            this.label6.Text = "Mevcut Stok";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(641, 29);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(148, 20);
+            this.textBox2.TabIndex = 20;
+            this.textBox2.UseSystemPasswordChar = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(401, 75);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(148, 20);
+            this.textBox1.TabIndex = 19;
+            this.textBox1.UseSystemPasswordChar = true;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Admin",
+            "Normal"});
+            this.comboBox1.Location = new System.Drawing.Point(100, 67);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(148, 21);
+            this.comboBox1.TabIndex = 18;
             // 
             // label5
             // 
@@ -214,42 +254,25 @@ namespace stok_
             this.btn_giris.Text = "Ekle";
             this.btn_giris.UseVisualStyleBackColor = false;
             // 
-            // comboBox1
+            // menuStrip1
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Admin",
-            "Normal"});
-            this.comboBox1.Location = new System.Drawing.Point(100, 67);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(148, 21);
-            this.comboBox1.TabIndex = 18;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.denemeToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1002, 27);
+            this.menuStrip1.TabIndex = 6;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // textBox1
+            // denemeToolStripMenuItem
             // 
-            this.textBox1.Location = new System.Drawing.Point(401, 75);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(148, 20);
-            this.textBox1.TabIndex = 19;
-            this.textBox1.UseSystemPasswordChar = true;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(555, 32);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(80, 17);
-            this.label6.TabIndex = 21;
-            this.label6.Text = "Mevcut Stok";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(641, 29);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(148, 20);
-            this.textBox2.TabIndex = 20;
-            this.textBox2.UseSystemPasswordChar = true;
+            this.denemeToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(57)))), ((int)(((byte)(129)))));
+            this.denemeToolStripMenuItem.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.denemeToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.denemeToolStripMenuItem.Name = "denemeToolStripMenuItem";
+            this.denemeToolStripMenuItem.Size = new System.Drawing.Size(126, 23);
+            this.denemeToolStripMenuItem.Text = "Kategori İslemleri";
+            this.denemeToolStripMenuItem.Click += new System.EventHandler(this.denemeToolStripMenuItem_Click);
             // 
             // products_management
             // 
@@ -257,6 +280,7 @@ namespace stok_
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.menuStrip1);
             this.Name = "products_management";
             this.Size = new System.Drawing.Size(1002, 496);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -264,7 +288,10 @@ namespace stok_
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -288,5 +315,7 @@ namespace stok_
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem denemeToolStripMenuItem;
     }
 }

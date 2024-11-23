@@ -63,7 +63,8 @@ namespace stok_
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            products_management usr = new products_management();
+            add_user_control(usr, pnl_screen);
         }
     }
 }
