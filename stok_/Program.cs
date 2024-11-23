@@ -16,7 +16,7 @@ namespace stok_
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new main_form());
+            Application.Run(new  admin_main_form());
         }
     }
 }

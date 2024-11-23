@@ -32,15 +32,15 @@ namespace stok_
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(main_form));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnl_login_page = new System.Windows.Forms.Panel();
-            this.lbl_exit = new System.Windows.Forms.Label();
-            this.lbl_welcome = new System.Windows.Forms.Label();
-            this.lbl_oturum = new System.Windows.Forms.Label();
-            this.txtbox_kullanici_adi = new System.Windows.Forms.TextBox();
-            this.btn_giris = new System.Windows.Forms.Button();
-            this.lbl_parola_yenile = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtbox_sifre = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lbl_parola_yenile = new System.Windows.Forms.Label();
+            this.btn_giris = new System.Windows.Forms.Button();
+            this.txtbox_kullanici_adi = new System.Windows.Forms.TextBox();
+            this.lbl_oturum = new System.Windows.Forms.Label();
+            this.lbl_welcome = new System.Windows.Forms.Label();
+            this.lbl_exit = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnl_login_page.SuspendLayout();
             this.SuspendLayout();
@@ -74,84 +74,9 @@ namespace stok_
             this.pnl_login_page.Size = new System.Drawing.Size(421, 477);
             this.pnl_login_page.TabIndex = 1;
             // 
-            // lbl_exit
-            // 
-            this.lbl_exit.AutoSize = true;
-            this.lbl_exit.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_exit.Location = new System.Drawing.Point(391, 0);
-            this.lbl_exit.Name = "lbl_exit";
-            this.lbl_exit.Size = new System.Drawing.Size(27, 28);
-            this.lbl_exit.TabIndex = 0;
-            this.lbl_exit.Text = "X";
-            // 
-            // lbl_welcome
-            // 
-            this.lbl_welcome.AutoSize = true;
-            this.lbl_welcome.Font = new System.Drawing.Font("Microsoft YaHei UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_welcome.Location = new System.Drawing.Point(46, 91);
-            this.lbl_welcome.Name = "lbl_welcome";
-            this.lbl_welcome.Size = new System.Drawing.Size(205, 42);
-            this.lbl_welcome.TabIndex = 1;
-            this.lbl_welcome.Text = "Hoşgeldiniz";
-            // 
-            // lbl_oturum
-            // 
-            this.lbl_oturum.AutoSize = true;
-            this.lbl_oturum.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_oturum.Location = new System.Drawing.Point(50, 133);
-            this.lbl_oturum.Name = "lbl_oturum";
-            this.lbl_oturum.Size = new System.Drawing.Size(175, 13);
-            this.lbl_oturum.TabIndex = 2;
-            this.lbl_oturum.Text = "Devam etmek için oturum açın";
-            // 
-            // txtbox_kullanici_adi
-            // 
-            this.txtbox_kullanici_adi.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtbox_kullanici_adi.Font = new System.Drawing.Font("Malgun Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbox_kullanici_adi.Location = new System.Drawing.Point(85, 213);
-            this.txtbox_kullanici_adi.Multiline = true;
-            this.txtbox_kullanici_adi.Name = "txtbox_kullanici_adi";
-            this.txtbox_kullanici_adi.Size = new System.Drawing.Size(276, 36);
-            this.txtbox_kullanici_adi.TabIndex = 3;
-            this.txtbox_kullanici_adi.Text = "Kullanıcı Adı";
-            // 
-            // btn_giris
-            // 
-            this.btn_giris.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(77)))), ((int)(((byte)(56)))));
-            this.btn_giris.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_giris.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_giris.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_giris.ForeColor = System.Drawing.Color.White;
-            this.btn_giris.Location = new System.Drawing.Point(85, 375);
-            this.btn_giris.Name = "btn_giris";
-            this.btn_giris.Size = new System.Drawing.Size(276, 43);
-            this.btn_giris.TabIndex = 5;
-            this.btn_giris.Text = "Giris";
-            this.btn_giris.UseVisualStyleBackColor = false;
-            this.btn_giris.Click += new System.EventHandler(this.btn_giris_Click);
-            // 
-            // lbl_parola_yenile
-            // 
-            this.lbl_parola_yenile.AutoSize = true;
-            this.lbl_parola_yenile.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbl_parola_yenile.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_parola_yenile.Location = new System.Drawing.Point(210, 327);
-            this.lbl_parola_yenile.Name = "lbl_parola_yenile";
-            this.lbl_parola_yenile.Size = new System.Drawing.Size(151, 13);
-            this.lbl_parola_yenile.TabIndex = 7;
-            this.lbl_parola_yenile.Text = "Parolanızı mı unuttunuz?";
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(77)))), ((int)(((byte)(56)))));
-            this.panel1.Location = new System.Drawing.Point(85, 247);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(276, 5);
-            this.panel1.TabIndex = 10;
-            // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(77)))), ((int)(((byte)(56)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(142)))), ((int)(((byte)(73)))));
             this.panel2.Location = new System.Drawing.Point(85, 305);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(276, 5);
@@ -168,6 +93,81 @@ namespace stok_
             this.txtbox_sifre.TabIndex = 11;
             this.txtbox_sifre.Text = "Sifre";
             this.txtbox_sifre.UseSystemPasswordChar = true;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(142)))), ((int)(((byte)(73)))));
+            this.panel1.Location = new System.Drawing.Point(85, 247);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(276, 5);
+            this.panel1.TabIndex = 10;
+            // 
+            // lbl_parola_yenile
+            // 
+            this.lbl_parola_yenile.AutoSize = true;
+            this.lbl_parola_yenile.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbl_parola_yenile.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_parola_yenile.Location = new System.Drawing.Point(210, 327);
+            this.lbl_parola_yenile.Name = "lbl_parola_yenile";
+            this.lbl_parola_yenile.Size = new System.Drawing.Size(151, 13);
+            this.lbl_parola_yenile.TabIndex = 7;
+            this.lbl_parola_yenile.Text = "Parolanızı mı unuttunuz?";
+            // 
+            // btn_giris
+            // 
+            this.btn_giris.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(142)))), ((int)(((byte)(73)))));
+            this.btn_giris.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_giris.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_giris.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_giris.ForeColor = System.Drawing.Color.White;
+            this.btn_giris.Location = new System.Drawing.Point(85, 375);
+            this.btn_giris.Name = "btn_giris";
+            this.btn_giris.Size = new System.Drawing.Size(276, 43);
+            this.btn_giris.TabIndex = 5;
+            this.btn_giris.Text = "Giris";
+            this.btn_giris.UseVisualStyleBackColor = false;
+            this.btn_giris.Click += new System.EventHandler(this.btn_giris_Click);
+            // 
+            // txtbox_kullanici_adi
+            // 
+            this.txtbox_kullanici_adi.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtbox_kullanici_adi.Font = new System.Drawing.Font("Malgun Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbox_kullanici_adi.Location = new System.Drawing.Point(85, 213);
+            this.txtbox_kullanici_adi.Multiline = true;
+            this.txtbox_kullanici_adi.Name = "txtbox_kullanici_adi";
+            this.txtbox_kullanici_adi.Size = new System.Drawing.Size(276, 36);
+            this.txtbox_kullanici_adi.TabIndex = 3;
+            this.txtbox_kullanici_adi.Text = "Kullanıcı Adı";
+            // 
+            // lbl_oturum
+            // 
+            this.lbl_oturum.AutoSize = true;
+            this.lbl_oturum.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_oturum.Location = new System.Drawing.Point(50, 133);
+            this.lbl_oturum.Name = "lbl_oturum";
+            this.lbl_oturum.Size = new System.Drawing.Size(175, 13);
+            this.lbl_oturum.TabIndex = 2;
+            this.lbl_oturum.Text = "Devam etmek için oturum açın";
+            // 
+            // lbl_welcome
+            // 
+            this.lbl_welcome.AutoSize = true;
+            this.lbl_welcome.Font = new System.Drawing.Font("Microsoft YaHei UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_welcome.Location = new System.Drawing.Point(46, 91);
+            this.lbl_welcome.Name = "lbl_welcome";
+            this.lbl_welcome.Size = new System.Drawing.Size(205, 42);
+            this.lbl_welcome.TabIndex = 1;
+            this.lbl_welcome.Text = "Hoşgeldiniz";
+            // 
+            // lbl_exit
+            // 
+            this.lbl_exit.AutoSize = true;
+            this.lbl_exit.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_exit.Location = new System.Drawing.Point(391, 0);
+            this.lbl_exit.Name = "lbl_exit";
+            this.lbl_exit.Size = new System.Drawing.Size(27, 28);
+            this.lbl_exit.TabIndex = 0;
+            this.lbl_exit.Text = "X";
             // 
             // main_form
             // 
