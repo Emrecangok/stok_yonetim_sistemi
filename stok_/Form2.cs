@@ -12,6 +12,7 @@ namespace stok_
 {
     public partial class admin_main_form : Form
     {
+        public usr_contorl_class usrmg = new usr_contorl_class(); //user controlleri içeren sınıf
         public admin_main_form()
         {
             InitializeComponent();
@@ -19,20 +20,13 @@ namespace stok_
 
 
 
-        private void add_user_control(UserControl usr,Panel pnl)
-        {
-            usr.Dock = DockStyle.Fill;
-            pnl.Controls.Clear();
-            pnl.Controls.Add(usr);
-            usr.BringToFront();
-
-
-        }
+       
+     
         private void btn_user_management_Click(object sender, EventArgs e)
         {
             user_management usr = new user_management();
 
-            add_user_control(usr, pnl_screen);
+            usrmg.add_user_control(usr, pnl_screen);
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -45,7 +39,7 @@ namespace stok_
         private void admin_main_form_Load(object sender, EventArgs e)
         {
            usr_main_menu usr_main = new usr_main_menu();
-            add_user_control(usr_main,pnl_screen);
+            usrmg.add_user_control(usr_main,pnl_screen);
 
 
         }
@@ -55,16 +49,31 @@ namespace stok_
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            usr_main_menu usr_main = new usr_main_menu();
-            add_user_control(usr_main, pnl_screen);
-        }
+   
 
         private void button1_Click(object sender, EventArgs e)
         {
+            usrmg.filled_panel = pnl_screen;
             products_management usr = new products_management();
-            add_user_control(usr, pnl_screen);
+            usrmg.add_user_control(usr, pnl_screen);
+
+        }
+
+        private void btn_main_menu_Click(object sender, EventArgs e)
+        {
+            usr_main_menu usr_main = new usr_main_menu();
+            usrmg.add_user_control(usr_main, pnl_screen);
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void menuStrip1_ItemClicked_1(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }
