@@ -29,8 +29,6 @@ namespace stok_
         /// </summary>
         private void InitializeComponent()
         {
-            this.category_tool = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -41,33 +39,10 @@ namespace stok_
             this.btn_update = new System.Windows.Forms.Button();
             this.btn_giris = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.urun_islemler_tool = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // category_tool
-            // 
-            this.category_tool.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(57)))), ((int)(((byte)(129)))));
-            this.category_tool.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.category_tool.ForeColor = System.Drawing.Color.White;
-            this.category_tool.Name = "category_tool";
-            this.category_tool.Size = new System.Drawing.Size(126, 23);
-            this.category_tool.Text = "Kategori İslemleri";
-            this.category_tool.Click += new System.EventHandler(this.denemeToolStripMenuItem_Click);
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.category_tool,
-            this.urun_islemler_tool});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1002, 27);
-            this.menuStrip1.TabIndex = 9;
-            this.menuStrip1.Text = "menuStrip1";
             // 
             // label1
             // 
@@ -185,41 +160,24 @@ namespace stok_
             this.panel2.Size = new System.Drawing.Size(789, 189);
             this.panel2.TabIndex = 8;
             // 
-            // urun_islemler_tool
-            // 
-            this.urun_islemler_tool.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(57)))), ((int)(((byte)(129)))));
-            this.urun_islemler_tool.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.urun_islemler_tool.ForeColor = System.Drawing.Color.White;
-            this.urun_islemler_tool.Name = "urun_islemler_tool";
-            this.urun_islemler_tool.Size = new System.Drawing.Size(106, 23);
-            this.urun_islemler_tool.Text = "Ürün İşlemleri";
-            // 
             // usr_category
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "usr_category";
             this.Size = new System.Drawing.Size(1002, 496);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.ToolStripMenuItem category_tool;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem urun_islemler_tool;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dataGridView1;

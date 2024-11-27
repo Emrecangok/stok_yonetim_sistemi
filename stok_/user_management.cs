@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace stok_
 {
-    public partial class user_management : UserControl
+    public partial class usr_user_management : UserControl
     {
-        public user_management()
+        public usr_user_management()
         {
             InitializeComponent();
         }

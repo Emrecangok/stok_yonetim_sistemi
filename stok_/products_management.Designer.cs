@@ -1,7 +1,7 @@
 ﻿
 namespace stok_
 {
-    partial class products_management
+    partial class usr_products_maganement
     {
         /// <summary> 
         /// Required designer variable.
@@ -251,13 +251,13 @@ namespace stok_
             this.btn_giris.Text = "Ekle";
             this.btn_giris.UseVisualStyleBackColor = false;
             // 
-            // products_management
+            // usr_products_maganement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
-            this.Name = "products_management";
+            this.Name = "usr_products_maganement";
             this.Size = new System.Drawing.Size(1002, 496);
             this.Load += new System.EventHandler(this.products_management_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

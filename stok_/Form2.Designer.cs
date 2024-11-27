@@ -30,143 +30,47 @@ namespace stok_
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(admin_main_form));
-            this.btn_user_management = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btn_main_menu = new System.Windows.Forms.Button();
-            this.btn_tedarikci = new System.Windows.Forms.Button();
-            this.btn_stock_management = new System.Windows.Forms.Button();
-            this.btn_products_management = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.pnl_screen = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.denemeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.denemeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.denemeToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel2.SuspendLayout();
+            this.menu_strip_main = new System.Windows.Forms.MenuStrip();
+            this.manin_menu_tsm = new System.Windows.Forms.ToolStripMenuItem();
+            this.stock_mg_tsm = new System.Windows.Forms.ToolStripMenuItem();
+            this.products_tsm_down = new System.Windows.Forms.ToolStripMenuItem();
+            this.category_tsm_down = new System.Windows.Forms.ToolStripMenuItem();
+            this.stock_tsm_down = new System.Windows.Forms.ToolStripMenuItem();
+            this.user_mg_tsm = new System.Windows.Forms.ToolStripMenuItem();
+            this.user_actions_tsm_down = new System.Windows.Forms.ToolStripMenuItem();
+            this.roles_tsm_down = new System.Windows.Forms.ToolStripMenuItem();
+            this.repot_mg_tsm = new System.Windows.Forms.ToolStripMenuItem();
+            this.stock_report_tsm_down = new System.Windows.Forms.ToolStripMenuItem();
+            this.sales_report_tsm_down = new System.Windows.Forms.ToolStripMenuItem();
+            this.warehouse_mg_tsm = new System.Windows.Forms.ToolStripMenuItem();
+            this.ware_house_tsm_down = new System.Windows.Forms.ToolStripMenuItem();
+            this.p_ware_house_tsm_down = new System.Windows.Forms.ToolStripMenuItem();
+            this.supplier_mg_tsm = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
+            this.menu_strip_main.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btn_user_management
-            // 
-            this.btn_user_management.FlatAppearance.BorderSize = 0;
-            this.btn_user_management.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_user_management.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn_user_management.ForeColor = System.Drawing.Color.White;
-            this.btn_user_management.Image = ((System.Drawing.Image)(resources.GetObject("btn_user_management.Image")));
-            this.btn_user_management.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_user_management.Location = new System.Drawing.Point(0, 174);
-            this.btn_user_management.Name = "btn_user_management";
-            this.btn_user_management.Size = new System.Drawing.Size(200, 37);
-            this.btn_user_management.TabIndex = 1;
-            this.btn_user_management.Text = "Kullanıcı Yönetimi";
-            this.btn_user_management.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_user_management.UseVisualStyleBackColor = true;
-            this.btn_user_management.Click += new System.EventHandler(this.btn_user_management_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(57)))), ((int)(((byte)(129)))));
-            this.panel2.Controls.Add(this.btn_main_menu);
-            this.panel2.Controls.Add(this.btn_tedarikci);
-            this.panel2.Controls.Add(this.btn_stock_management);
-            this.panel2.Controls.Add(this.btn_products_management);
-            this.panel2.Controls.Add(this.btn_user_management);
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(201, 577);
-            this.panel2.TabIndex = 1;
-            // 
-            // btn_main_menu
-            // 
-            this.btn_main_menu.FlatAppearance.BorderSize = 0;
-            this.btn_main_menu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_main_menu.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn_main_menu.ForeColor = System.Drawing.Color.White;
-            this.btn_main_menu.Image = ((System.Drawing.Image)(resources.GetObject("btn_main_menu.Image")));
-            this.btn_main_menu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_main_menu.Location = new System.Drawing.Point(0, 102);
-            this.btn_main_menu.Name = "btn_main_menu";
-            this.btn_main_menu.Size = new System.Drawing.Size(200, 37);
-            this.btn_main_menu.TabIndex = 5;
-            this.btn_main_menu.Text = "Ana Menü         ";
-            this.btn_main_menu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_main_menu.UseVisualStyleBackColor = true;
-            this.btn_main_menu.Click += new System.EventHandler(this.btn_main_menu_Click);
-            // 
-            // btn_tedarikci
-            // 
-            this.btn_tedarikci.FlatAppearance.BorderSize = 0;
-            this.btn_tedarikci.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_tedarikci.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn_tedarikci.ForeColor = System.Drawing.Color.White;
-            this.btn_tedarikci.Image = ((System.Drawing.Image)(resources.GetObject("btn_tedarikci.Image")));
-            this.btn_tedarikci.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_tedarikci.Location = new System.Drawing.Point(3, 414);
-            this.btn_tedarikci.Name = "btn_tedarikci";
-            this.btn_tedarikci.Size = new System.Drawing.Size(200, 37);
-            this.btn_tedarikci.TabIndex = 4;
-            this.btn_tedarikci.Text = "Tedarikçi Yönetimi";
-            this.btn_tedarikci.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_tedarikci.UseVisualStyleBackColor = true;
-            // 
-            // btn_stock_management
-            // 
-            this.btn_stock_management.FlatAppearance.BorderSize = 0;
-            this.btn_stock_management.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_stock_management.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn_stock_management.ForeColor = System.Drawing.Color.White;
-            this.btn_stock_management.Image = ((System.Drawing.Image)(resources.GetObject("btn_stock_management.Image")));
-            this.btn_stock_management.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_stock_management.Location = new System.Drawing.Point(0, 334);
-            this.btn_stock_management.Name = "btn_stock_management";
-            this.btn_stock_management.Size = new System.Drawing.Size(200, 37);
-            this.btn_stock_management.TabIndex = 3;
-            this.btn_stock_management.Text = "Stok Yönetimi    ";
-            this.btn_stock_management.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_stock_management.UseVisualStyleBackColor = true;
-            // 
-            // btn_products_management
-            // 
-            this.btn_products_management.FlatAppearance.BorderSize = 0;
-            this.btn_products_management.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_products_management.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn_products_management.ForeColor = System.Drawing.Color.White;
-            this.btn_products_management.Image = ((System.Drawing.Image)(resources.GetObject("btn_products_management.Image")));
-            this.btn_products_management.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_products_management.Location = new System.Drawing.Point(0, 254);
-            this.btn_products_management.Name = "btn_products_management";
-            this.btn_products_management.Size = new System.Drawing.Size(200, 37);
-            this.btn_products_management.TabIndex = 2;
-            this.btn_products_management.Text = "Ürün Yönetimi   ";
-            this.btn_products_management.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_products_management.UseVisualStyleBackColor = true;
-            this.btn_products_management.Click += new System.EventHandler(this.button1_Click);
             // 
             // pnl_screen
             // 
-            this.pnl_screen.BackColor = System.Drawing.SystemColors.Control;
-            this.pnl_screen.Location = new System.Drawing.Point(201, 81);
+            this.pnl_screen.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pnl_screen.Location = new System.Drawing.Point(0, 36);
             this.pnl_screen.Name = "pnl_screen";
-            this.pnl_screen.Size = new System.Drawing.Size(1002, 496);
+            this.pnl_screen.Size = new System.Drawing.Size(1203, 541);
             this.pnl_screen.TabIndex = 2;
             this.pnl_screen.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_screen_Paint);
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(80)))), ((int)(((byte)(154)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.menuStrip1);
-            this.panel1.Location = new System.Drawing.Point(201, 0);
+            this.panel1.Controls.Add(this.menu_strip_main);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1005, 83);
+            this.panel1.Size = new System.Drawing.Size(1206, 41);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -180,61 +84,166 @@ namespace stok_
             this.label1.TabIndex = 2;
             this.label1.Text = "X";
             // 
-            // label2
+            // menu_strip_main
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(13, 26);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(172, 21);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Admin Kontrol Paneli";
+            this.menu_strip_main.BackColor = System.Drawing.Color.Transparent;
+            this.menu_strip_main.Dock = System.Windows.Forms.DockStyle.None;
+            this.menu_strip_main.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.manin_menu_tsm,
+            this.stock_mg_tsm,
+            this.user_mg_tsm,
+            this.repot_mg_tsm,
+            this.warehouse_mg_tsm,
+            this.supplier_mg_tsm});
+            this.menu_strip_main.Location = new System.Drawing.Point(0, 0);
+            this.menu_strip_main.Name = "menu_strip_main";
+            this.menu_strip_main.Size = new System.Drawing.Size(1065, 33);
+            this.menu_strip_main.TabIndex = 3;
+            this.menu_strip_main.Text = "menuStrip1";
+            this.menu_strip_main.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked_1);
             // 
-            // panel3
+            // manin_menu_tsm
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(57)))), ((int)(((byte)(129)))));
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(203, 83);
-            this.panel3.TabIndex = 2;
+            this.manin_menu_tsm.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.manin_menu_tsm.ForeColor = System.Drawing.Color.White;
+            this.manin_menu_tsm.Image = global::stok_.Properties.Resources.home;
+            this.manin_menu_tsm.Name = "manin_menu_tsm";
+            this.manin_menu_tsm.Size = new System.Drawing.Size(127, 29);
+            this.manin_menu_tsm.Text = "Ana Menü";
+            this.manin_menu_tsm.Click += new System.EventHandler(this.manin_menu_tsm_Click);
             // 
-            // menuStrip1
+            // stock_mg_tsm
             // 
-            this.menuStrip1.BackColor = System.Drawing.Color.Transparent;
-            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.denemeToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(5, 25);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(178, 58);
-            this.menuStrip1.TabIndex = 3;
-            this.menuStrip1.Text = "menuStrip1";
-            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked_1);
+            this.stock_mg_tsm.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.products_tsm_down,
+            this.category_tsm_down,
+            this.stock_tsm_down});
+            this.stock_mg_tsm.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.stock_mg_tsm.ForeColor = System.Drawing.Color.White;
+            this.stock_mg_tsm.Image = global::stok_.Properties.Resources.stock_market;
+            this.stock_mg_tsm.Name = "stock_mg_tsm";
+            this.stock_mg_tsm.Size = new System.Drawing.Size(153, 29);
+            this.stock_mg_tsm.Text = "Stok Yönetimi";
             // 
-            // denemeToolStripMenuItem
+            // products_tsm_down
             // 
-            this.denemeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.denemeToolStripMenuItem1,
-            this.denemeToolStripMenuItem2});
-            this.denemeToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.denemeToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.denemeToolStripMenuItem.Name = "denemeToolStripMenuItem";
-            this.denemeToolStripMenuItem.Size = new System.Drawing.Size(170, 54);
-            this.denemeToolStripMenuItem.Text = "Deneme";
+            this.products_tsm_down.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
+            this.products_tsm_down.ForeColor = System.Drawing.Color.White;
+            this.products_tsm_down.Name = "products_tsm_down";
+            this.products_tsm_down.Size = new System.Drawing.Size(216, 30);
+            this.products_tsm_down.Text = "Ürünler";
+            this.products_tsm_down.Click += new System.EventHandler(this.products_tsm_down_Click);
             // 
-            // denemeToolStripMenuItem1
+            // category_tsm_down
             // 
-            this.denemeToolStripMenuItem1.Name = "denemeToolStripMenuItem1";
-            this.denemeToolStripMenuItem1.Size = new System.Drawing.Size(236, 54);
-            this.denemeToolStripMenuItem1.Text = "deneme";
+            this.category_tsm_down.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
+            this.category_tsm_down.ForeColor = System.Drawing.Color.White;
+            this.category_tsm_down.Name = "category_tsm_down";
+            this.category_tsm_down.Size = new System.Drawing.Size(216, 30);
+            this.category_tsm_down.Text = "Kategoriler";
+            this.category_tsm_down.Click += new System.EventHandler(this.category_tsm_down_Click);
             // 
-            // denemeToolStripMenuItem2
+            // stock_tsm_down
             // 
-            this.denemeToolStripMenuItem2.Name = "denemeToolStripMenuItem2";
-            this.denemeToolStripMenuItem2.Size = new System.Drawing.Size(236, 54);
-            this.denemeToolStripMenuItem2.Text = "deneme";
+            this.stock_tsm_down.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
+            this.stock_tsm_down.ForeColor = System.Drawing.Color.White;
+            this.stock_tsm_down.Name = "stock_tsm_down";
+            this.stock_tsm_down.Size = new System.Drawing.Size(216, 30);
+            this.stock_tsm_down.Text = "Stok Hareketleri";
+            // 
+            // user_mg_tsm
+            // 
+            this.user_mg_tsm.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.user_actions_tsm_down,
+            this.roles_tsm_down});
+            this.user_mg_tsm.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.user_mg_tsm.ForeColor = System.Drawing.Color.White;
+            this.user_mg_tsm.Image = global::stok_.Properties.Resources.team__2_;
+            this.user_mg_tsm.Name = "user_mg_tsm";
+            this.user_mg_tsm.Size = new System.Drawing.Size(190, 29);
+            this.user_mg_tsm.Text = "Kullanıcı Yönetimi";
+            // 
+            // user_actions_tsm_down
+            // 
+            this.user_actions_tsm_down.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
+            this.user_actions_tsm_down.ForeColor = System.Drawing.Color.White;
+            this.user_actions_tsm_down.Name = "user_actions_tsm_down";
+            this.user_actions_tsm_down.Size = new System.Drawing.Size(232, 30);
+            this.user_actions_tsm_down.Text = "Kullanıcı İşlemleri";
+            this.user_actions_tsm_down.Click += new System.EventHandler(this.user_actions_tsm_down_Click);
+            // 
+            // roles_tsm_down
+            // 
+            this.roles_tsm_down.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
+            this.roles_tsm_down.ForeColor = System.Drawing.Color.White;
+            this.roles_tsm_down.Name = "roles_tsm_down";
+            this.roles_tsm_down.Size = new System.Drawing.Size(232, 30);
+            this.roles_tsm_down.Text = "Roller";
+            // 
+            // repot_mg_tsm
+            // 
+            this.repot_mg_tsm.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.stock_report_tsm_down,
+            this.sales_report_tsm_down});
+            this.repot_mg_tsm.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.repot_mg_tsm.ForeColor = System.Drawing.Color.White;
+            this.repot_mg_tsm.Image = ((System.Drawing.Image)(resources.GetObject("repot_mg_tsm.Image")));
+            this.repot_mg_tsm.Name = "repot_mg_tsm";
+            this.repot_mg_tsm.Size = new System.Drawing.Size(112, 29);
+            this.repot_mg_tsm.Text = "Raporlar";
+            // 
+            // stock_report_tsm_down
+            // 
+            this.stock_report_tsm_down.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
+            this.stock_report_tsm_down.ForeColor = System.Drawing.Color.White;
+            this.stock_report_tsm_down.Name = "stock_report_tsm_down";
+            this.stock_report_tsm_down.Size = new System.Drawing.Size(205, 30);
+            this.stock_report_tsm_down.Text = "Stok Raporları";
+            // 
+            // sales_report_tsm_down
+            // 
+            this.sales_report_tsm_down.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
+            this.sales_report_tsm_down.ForeColor = System.Drawing.Color.White;
+            this.sales_report_tsm_down.Name = "sales_report_tsm_down";
+            this.sales_report_tsm_down.Size = new System.Drawing.Size(205, 30);
+            this.sales_report_tsm_down.Text = "Satış Raporları";
+            // 
+            // warehouse_mg_tsm
+            // 
+            this.warehouse_mg_tsm.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ware_house_tsm_down,
+            this.p_ware_house_tsm_down});
+            this.warehouse_mg_tsm.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.warehouse_mg_tsm.ForeColor = System.Drawing.Color.White;
+            this.warehouse_mg_tsm.Image = global::stok_.Properties.Resources.parcel;
+            this.warehouse_mg_tsm.Name = "warehouse_mg_tsm";
+            this.warehouse_mg_tsm.Size = new System.Drawing.Size(163, 29);
+            this.warehouse_mg_tsm.Text = "Depo Yönetimi";
+            // 
+            // ware_house_tsm_down
+            // 
+            this.ware_house_tsm_down.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
+            this.ware_house_tsm_down.ForeColor = System.Drawing.Color.White;
+            this.ware_house_tsm_down.Name = "ware_house_tsm_down";
+            this.ware_house_tsm_down.Size = new System.Drawing.Size(234, 30);
+            this.ware_house_tsm_down.Text = "Depolar";
+            // 
+            // p_ware_house_tsm_down
+            // 
+            this.p_ware_house_tsm_down.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
+            this.p_ware_house_tsm_down.ForeColor = System.Drawing.Color.White;
+            this.p_ware_house_tsm_down.Name = "p_ware_house_tsm_down";
+            this.p_ware_house_tsm_down.Size = new System.Drawing.Size(234, 30);
+            this.p_ware_house_tsm_down.Text = "Ürün-Depo İlişkisi";
+            // 
+            // supplier_mg_tsm
+            // 
+            this.supplier_mg_tsm.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.supplier_mg_tsm.ForeColor = System.Drawing.Color.White;
+            this.supplier_mg_tsm.Image = global::stok_.Properties.Resources.parcel;
+            this.supplier_mg_tsm.Name = "supplier_mg_tsm";
+            this.supplier_mg_tsm.Size = new System.Drawing.Size(192, 29);
+            this.supplier_mg_tsm.Text = "Tedarikci Yönetimi";
             // 
             // admin_main_form
             // 
@@ -244,39 +253,39 @@ namespace stok_
             this.ClientSize = new System.Drawing.Size(1201, 577);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnl_screen);
-            this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "admin_main_form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main Page";
             this.Load += new System.EventHandler(this.admin_main_form_Load);
-            this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.menu_strip_main.ResumeLayout(false);
+            this.menu_strip_main.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Button btn_user_management;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btn_tedarikci;
-        private System.Windows.Forms.Button btn_stock_management;
-        private System.Windows.Forms.Button btn_products_management;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.Button btn_main_menu;
         public System.Windows.Forms.Panel pnl_screen;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip menu_strip_main;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ToolStripMenuItem denemeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem denemeToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem denemeToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem manin_menu_tsm;
+        private System.Windows.Forms.ToolStripMenuItem stock_mg_tsm;
+        private System.Windows.Forms.ToolStripMenuItem user_mg_tsm;
+        private System.Windows.Forms.ToolStripMenuItem repot_mg_tsm;
+        private System.Windows.Forms.ToolStripMenuItem supplier_mg_tsm;
+        private System.Windows.Forms.ToolStripMenuItem products_tsm_down;
+        private System.Windows.Forms.ToolStripMenuItem category_tsm_down;
+        private System.Windows.Forms.ToolStripMenuItem stock_tsm_down;
+        private System.Windows.Forms.ToolStripMenuItem user_actions_tsm_down;
+        private System.Windows.Forms.ToolStripMenuItem roles_tsm_down;
+        private System.Windows.Forms.ToolStripMenuItem stock_report_tsm_down;
+        private System.Windows.Forms.ToolStripMenuItem sales_report_tsm_down;
+        private System.Windows.Forms.ToolStripMenuItem warehouse_mg_tsm;
+        private System.Windows.Forms.ToolStripMenuItem ware_house_tsm_down;
+        private System.Windows.Forms.ToolStripMenuItem p_ware_house_tsm_down;
     }
 }

@@ -96,7 +96,7 @@ namespace stok_
             this.panel9.Controls.Add(this.label14);
             this.panel9.Controls.Add(this.pictureBox6);
             this.panel9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel9.Location = new System.Drawing.Point(666, 269);
+            this.panel9.Location = new System.Drawing.Point(761, 269);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(213, 88);
             this.panel9.TabIndex = 16;
@@ -123,7 +123,7 @@ namespace stok_
             // 
             // pictureBox6
             // 
-            this.pictureBox6.BackColor = System.Drawing.Color.DarkOrange;
+            this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(140)))), ((int)(((byte)(0)))));
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
             this.pictureBox6.Location = new System.Drawing.Point(4, 13);
             this.pictureBox6.Name = "pictureBox6";
@@ -140,7 +140,7 @@ namespace stok_
             this.panel8.Controls.Add(this.lbl_low_stock);
             this.panel8.Controls.Add(this.pictureBox5);
             this.panel8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel8.Location = new System.Drawing.Point(410, 269);
+            this.panel8.Location = new System.Drawing.Point(505, 269);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(213, 88);
             this.panel8.TabIndex = 15;
@@ -167,7 +167,7 @@ namespace stok_
             // 
             // pictureBox5
             // 
-            this.pictureBox5.BackColor = System.Drawing.Color.Crimson;
+            this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(57)))), ((int)(((byte)(53)))));
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(4, 13);
             this.pictureBox5.Name = "pictureBox5";
@@ -184,7 +184,7 @@ namespace stok_
             this.panel7.Controls.Add(this.label10);
             this.panel7.Controls.Add(this.pictureBox4);
             this.panel7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel7.Location = new System.Drawing.Point(155, 269);
+            this.panel7.Location = new System.Drawing.Point(250, 269);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(213, 88);
             this.panel7.TabIndex = 14;
@@ -211,7 +211,7 @@ namespace stok_
             // 
             // pictureBox4
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.pictureBox4.BackColor = System.Drawing.Color.DimGray;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(4, 13);
             this.pictureBox4.Name = "pictureBox4";
@@ -228,7 +228,7 @@ namespace stok_
             this.panel6.Controls.Add(this.label8);
             this.panel6.Controls.Add(this.pictureBox3);
             this.panel6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel6.Location = new System.Drawing.Point(666, 132);
+            this.panel6.Location = new System.Drawing.Point(761, 132);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(213, 88);
             this.panel6.TabIndex = 13;
@@ -255,7 +255,7 @@ namespace stok_
             // 
             // pictureBox3
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(129)))), ((int)(((byte)(24)))));
+            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(175)))), ((int)(((byte)(80)))));
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(4, 13);
             this.pictureBox3.Name = "pictureBox3";
@@ -272,7 +272,7 @@ namespace stok_
             this.panel4.Controls.Add(this.label6);
             this.panel4.Controls.Add(this.pictureBox2);
             this.panel4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel4.Location = new System.Drawing.Point(410, 132);
+            this.panel4.Location = new System.Drawing.Point(505, 132);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(213, 88);
             this.panel4.TabIndex = 12;
@@ -299,7 +299,7 @@ namespace stok_
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(235)))), ((int)(((byte)(0)))));
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(7)))));
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(4, 13);
             this.pictureBox2.Name = "pictureBox2";
@@ -316,7 +316,7 @@ namespace stok_
             this.panel5.Controls.Add(this.label4);
             this.panel5.Controls.Add(this.pictureBox1);
             this.panel5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel5.Location = new System.Drawing.Point(155, 132);
+            this.panel5.Location = new System.Drawing.Point(250, 132);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(213, 88);
             this.panel5.TabIndex = 11;
@@ -343,7 +343,7 @@ namespace stok_
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(4, 13);
             this.pictureBox1.Name = "pictureBox1";
@@ -365,7 +365,7 @@ namespace stok_
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel5);
             this.Name = "usr_main_menu";
-            this.Size = new System.Drawing.Size(1002, 495);
+            this.Size = new System.Drawing.Size(1203, 496);
             this.Load += new System.EventHandler(this.usr_main_menu_Load);
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();

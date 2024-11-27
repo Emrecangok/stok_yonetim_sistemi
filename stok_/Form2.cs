@@ -24,7 +24,7 @@ namespace stok_
      
         private void btn_user_management_Click(object sender, EventArgs e)
         {
-            user_management usr = new user_management();
+            usr_user_management usr = new usr_user_management();
 
             usrmg.add_user_control(usr, pnl_screen);
         }
@@ -54,7 +54,7 @@ namespace stok_
         private void button1_Click(object sender, EventArgs e)
         {
             usrmg.filled_panel = pnl_screen;
-            products_management usr = new products_management();
+            usr_products_maganement usr = new usr_products_maganement();
             usrmg.add_user_control(usr, pnl_screen);
 
         }
@@ -73,7 +73,39 @@ namespace stok_
 
         private void menuStrip1_ItemClicked_1(object sender, ToolStripItemClickedEventArgs e)
         {
+        }
 
+        private void product_mg_tsm_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void manin_menu_tsm_Click(object sender, EventArgs e)
+        {
+            usr_main_menu usr_main = new usr_main_menu();
+            usrmg.add_user_control(usr_main, pnl_screen);
+
+        }
+
+        private void products_tsm_down_Click(object sender, EventArgs e)
+        {
+            usr_products_maganement usr = new usr_products_maganement();
+            usrmg.add_user_control(usr, pnl_screen);
+
+        }
+
+        private void category_tsm_down_Click(object sender, EventArgs e)
+        {
+            usr_category usr = new usr_category();
+            usrmg.add_user_control(usr, pnl_screen);
+
+        }
+
+        private void user_actions_tsm_down_Click(object sender, EventArgs e)
+        {
+            usr_user_management usr = new usr_user_management();
+            usrmg.add_user_control(usr,pnl_screen);
+            
         }
     }
 }
