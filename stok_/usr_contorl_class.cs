@@ -19,15 +19,7 @@ namespace stok_
             usr.BringToFront();
             
         }
-        public void add_user_control(UserControl usr)
-        {
-            usr.Dock = DockStyle.Fill;
-            filled_panel.Controls.Clear();
-            filled_panel.Controls.Add(usr);
-            usr.BringToFront();
-
-
-        }
+      
         public void equalize(Panel panel)
         {
             filled_panel = panel;

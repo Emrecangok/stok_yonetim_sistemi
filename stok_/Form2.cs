@@ -107,5 +107,28 @@ namespace stok_
             usrmg.add_user_control(usr,pnl_screen);
             
         }
+
+        private void stock_report_tsm_down_Click(object sender, EventArgs e)
+        {
+            usr_reports usr = new usr_reports();
+            usrmg.add_user_control(usr, pnl_screen);
+        }
+
+        private void warehouse_mg_tsm_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ware_house_tsm_down_Click(object sender, EventArgs e)
+        {
+            usr_ware_house usr = new usr_ware_house();
+            usrmg.add_user_control(usr, pnl_screen);
+
+        }
+
+        private void repot_mg_tsm_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

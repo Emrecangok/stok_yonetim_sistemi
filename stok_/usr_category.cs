@@ -23,7 +23,7 @@ namespace stok_
         private void denemeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             usr_products_maganement usr = new usr_products_maganement();
-            usrmg.add_user_control(usr);
+            //usrmg.add_user_control(usr);
             //usrmg.add_user_control(usr,);
            
 

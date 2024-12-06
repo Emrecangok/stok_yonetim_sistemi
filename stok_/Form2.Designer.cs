@@ -191,6 +191,7 @@ namespace stok_
             this.repot_mg_tsm.Name = "repot_mg_tsm";
             this.repot_mg_tsm.Size = new System.Drawing.Size(112, 29);
             this.repot_mg_tsm.Text = "Raporlar";
+            this.repot_mg_tsm.Click += new System.EventHandler(this.repot_mg_tsm_Click);
             // 
             // stock_report_tsm_down
             // 
@@ -199,6 +200,7 @@ namespace stok_
             this.stock_report_tsm_down.Name = "stock_report_tsm_down";
             this.stock_report_tsm_down.Size = new System.Drawing.Size(205, 30);
             this.stock_report_tsm_down.Text = "Stok Raporları";
+            this.stock_report_tsm_down.Click += new System.EventHandler(this.stock_report_tsm_down_Click);
             // 
             // sales_report_tsm_down
             // 
@@ -219,6 +221,7 @@ namespace stok_
             this.warehouse_mg_tsm.Name = "warehouse_mg_tsm";
             this.warehouse_mg_tsm.Size = new System.Drawing.Size(163, 29);
             this.warehouse_mg_tsm.Text = "Depo Yönetimi";
+            this.warehouse_mg_tsm.Click += new System.EventHandler(this.warehouse_mg_tsm_Click);
             // 
             // ware_house_tsm_down
             // 
@@ -227,6 +230,7 @@ namespace stok_
             this.ware_house_tsm_down.Name = "ware_house_tsm_down";
             this.ware_house_tsm_down.Size = new System.Drawing.Size(234, 30);
             this.ware_house_tsm_down.Text = "Depolar";
+            this.ware_house_tsm_down.Click += new System.EventHandler(this.ware_house_tsm_down_Click);
             // 
             // p_ware_house_tsm_down
             // 

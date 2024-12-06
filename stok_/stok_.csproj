@@ -83,6 +83,7 @@
     <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
     </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -94,6 +95,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="classes\Admin_user.cs" />
+    <Compile Include="classes\Product.cs" />
+    <Compile Include="classes\sql_classes\Db_helper.cs" />
+    <Compile Include="classes\sql_classes\Products_repo.cs" />
+    <Compile Include="classes\sql_classes\Warehouse_repo.cs" />
+    <Compile Include="classes\Stock_transaction.cs" />
+    <Compile Include="classes\User.cs" />
+    <Compile Include="classes\Ware_house.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +123,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sql_codes.cs" />
     <Compile Include="UserControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -133,6 +143,18 @@
       <DependentUpon>usr_category.cs</DependentUpon>
     </Compile>
     <Compile Include="usr_contorl_class.cs" />
+    <Compile Include="usr_reports.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usr_reports.Designer.cs">
+      <DependentUpon>usr_reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usr_ware_house.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usr_ware_house.Designer.cs">
+      <DependentUpon>usr_ware_house.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -160,6 +182,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="usr_category.resx">
       <DependentUpon>usr_category.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usr_reports.resx">
+      <DependentUpon>usr_reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usr_ware_house.resx">
+      <DependentUpon>usr_ware_house.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
