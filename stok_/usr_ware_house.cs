@@ -45,6 +45,7 @@ namespace stok_
             else
             {
                 ware_repo.add_warehouse(ware);
+                ware_repo.view_warehouses(data_grid_ware_house);
 
 
             }

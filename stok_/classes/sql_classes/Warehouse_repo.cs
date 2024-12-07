@@ -24,6 +24,7 @@ namespace stok_.classes.sql_classes
             };
 
             execute_non_query(query, parameters);
+            
 
 
            
@@ -40,6 +41,7 @@ namespace stok_.classes.sql_classes
 
                 // SQL sorgusunu çalıştır ve sonuçları bir DataTable içine al
                 var dataTable = execute_query(query);
+               
 
                 // Manuel olarak sütunları ekle (eğer eklenmemişse)
                 if (gridView.Columns.Count == 0)

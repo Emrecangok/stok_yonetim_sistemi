@@ -7,11 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using stok_.classes.sql_classes;
+using stok_.classes;
 
 namespace stok_
 {
     public partial class usr_category : UserControl
     {
+        Categories_repo cat_repo = new Categories_repo("server=localHost;port=5432;" +
+           "Database=stok_yonetim;user Id=postgres; Password=can12345");
         public usr_category()
         {
             InitializeComponent();
@@ -27,6 +31,40 @@ namespace stok_
             //usrmg.add_user_control(usr,);
            
 
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btn_add_Click(object sender, EventArgs e)
+        {
+            string error_message;
+            Categories cat = new Categories();
+
+
+            cat.category_name = txtbox_category_name.Text;
+            
+
+            if (!cat.is_valid(out error_message))
+            {
+                MessageBox.Show(error_message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            else
+            {
+                cat_repo.add_category(cat);
+                cat_repo.view_categories(data_grid_category);
+
+
+            }
+
+        }
+
+        private void usr_category_Load(object sender, EventArgs e)
+        {
+            cat_repo.view_categories(data_grid_category);
         }
     }
 }

@@ -29,42 +29,60 @@ namespace stok_
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.data_grid_products = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.txt_box_current_stock = new System.Windows.Forms.TextBox();
+            this.txtbox_min_stock = new System.Windows.Forms.TextBox();
+            this.cmbox_category_id = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtbox_password = new System.Windows.Forms.TextBox();
+            this.txtbox_unit_price = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtbox_user_name = new System.Windows.Forms.TextBox();
+            this.txtbox_product_name = new System.Windows.Forms.TextBox();
             this.btn_clear = new System.Windows.Forms.Button();
             this.btn_del = new System.Windows.Forms.Button();
             this.btn_update = new System.Windows.Forms.Button();
-            this.btn_giris = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.btn_add = new System.Windows.Forms.Button();
+            this.product_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.product_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cateogry_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.unit_price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.current_stock = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.min_stock_level = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cmbox_ware_house = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.data_grid_products)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // data_grid_products
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(34, 41);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(730, 181);
-            this.dataGridView1.TabIndex = 0;
+            this.data_grid_products.AllowUserToAddRows = false;
+            this.data_grid_products.AllowUserToDeleteRows = false;
+            this.data_grid_products.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.data_grid_products.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.product_id,
+            this.product_name,
+            this.cateogry_id,
+            this.unit_price,
+            this.current_stock,
+            this.min_stock_level});
+            this.data_grid_products.Location = new System.Drawing.Point(34, 41);
+            this.data_grid_products.Name = "data_grid_products";
+            this.data_grid_products.ReadOnly = true;
+            this.data_grid_products.Size = new System.Drawing.Size(730, 181);
+            this.data_grid_products.TabIndex = 0;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Controls.Add(this.data_grid_products);
             this.panel1.Location = new System.Drawing.Point(107, 41);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(789, 235);
@@ -84,23 +102,25 @@ namespace stok_
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Controls.Add(this.cmbox_ware_house);
             this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Controls.Add(this.comboBox1);
+            this.panel2.Controls.Add(this.txt_box_current_stock);
+            this.panel2.Controls.Add(this.txtbox_min_stock);
+            this.panel2.Controls.Add(this.cmbox_category_id);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.txtbox_password);
+            this.panel2.Controls.Add(this.txtbox_unit_price);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.txtbox_user_name);
+            this.panel2.Controls.Add(this.txtbox_product_name);
             this.panel2.Controls.Add(this.btn_clear);
             this.panel2.Controls.Add(this.btn_del);
             this.panel2.Controls.Add(this.btn_update);
-            this.panel2.Controls.Add(this.btn_giris);
-            this.panel2.Location = new System.Drawing.Point(107, 296);
+            this.panel2.Controls.Add(this.btn_add);
+            this.panel2.Location = new System.Drawing.Point(27, 296);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(789, 189);
+            this.panel2.Size = new System.Drawing.Size(975, 189);
             this.panel2.TabIndex = 5;
             // 
             // label6
@@ -113,32 +133,30 @@ namespace stok_
             this.label6.TabIndex = 21;
             this.label6.Text = "Mevcut Stok";
             // 
-            // textBox2
+            // txt_box_current_stock
             // 
-            this.textBox2.Location = new System.Drawing.Point(641, 29);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(148, 20);
-            this.textBox2.TabIndex = 20;
-            this.textBox2.UseSystemPasswordChar = true;
+            this.txt_box_current_stock.Location = new System.Drawing.Point(641, 29);
+            this.txt_box_current_stock.Name = "txt_box_current_stock";
+            this.txt_box_current_stock.Size = new System.Drawing.Size(148, 20);
+            this.txt_box_current_stock.TabIndex = 20;
             // 
-            // textBox1
+            // txtbox_min_stock
             // 
-            this.textBox1.Location = new System.Drawing.Point(401, 75);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(148, 20);
-            this.textBox1.TabIndex = 19;
-            this.textBox1.UseSystemPasswordChar = true;
+            this.txtbox_min_stock.Location = new System.Drawing.Point(401, 75);
+            this.txtbox_min_stock.Name = "txtbox_min_stock";
+            this.txtbox_min_stock.Size = new System.Drawing.Size(148, 20);
+            this.txtbox_min_stock.TabIndex = 19;
             // 
-            // comboBox1
+            // cmbox_category_id
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbox_category_id.FormattingEnabled = true;
+            this.cmbox_category_id.Items.AddRange(new object[] {
             "Admin",
             "Normal"});
-            this.comboBox1.Location = new System.Drawing.Point(100, 67);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(148, 21);
-            this.comboBox1.TabIndex = 18;
+            this.cmbox_category_id.Location = new System.Drawing.Point(100, 67);
+            this.cmbox_category_id.Name = "cmbox_category_id";
+            this.cmbox_category_id.Size = new System.Drawing.Size(148, 21);
+            this.cmbox_category_id.TabIndex = 18;
             // 
             // label5
             // 
@@ -160,13 +178,12 @@ namespace stok_
             this.label4.TabIndex = 15;
             this.label4.Text = "Birim Fiyatı";
             // 
-            // txtbox_password
+            // txtbox_unit_price
             // 
-            this.txtbox_password.Location = new System.Drawing.Point(401, 29);
-            this.txtbox_password.Name = "txtbox_password";
-            this.txtbox_password.Size = new System.Drawing.Size(148, 20);
-            this.txtbox_password.TabIndex = 14;
-            this.txtbox_password.UseSystemPasswordChar = true;
+            this.txtbox_unit_price.Location = new System.Drawing.Point(401, 29);
+            this.txtbox_unit_price.Name = "txtbox_unit_price";
+            this.txtbox_unit_price.Size = new System.Drawing.Size(148, 20);
+            this.txtbox_unit_price.TabIndex = 14;
             // 
             // label3
             // 
@@ -188,12 +205,12 @@ namespace stok_
             this.label2.TabIndex = 11;
             this.label2.Text = "Ürün Adı";
             // 
-            // txtbox_user_name
+            // txtbox_product_name
             // 
-            this.txtbox_user_name.Location = new System.Drawing.Point(100, 29);
-            this.txtbox_user_name.Name = "txtbox_user_name";
-            this.txtbox_user_name.Size = new System.Drawing.Size(148, 20);
-            this.txtbox_user_name.TabIndex = 10;
+            this.txtbox_product_name.Location = new System.Drawing.Point(100, 29);
+            this.txtbox_product_name.Name = "txtbox_product_name";
+            this.txtbox_product_name.Size = new System.Drawing.Size(148, 20);
+            this.txtbox_product_name.TabIndex = 10;
             // 
             // btn_clear
             // 
@@ -237,19 +254,80 @@ namespace stok_
             this.btn_update.Text = "Güncelle";
             this.btn_update.UseVisualStyleBackColor = false;
             // 
-            // btn_giris
+            // btn_add
             // 
-            this.btn_giris.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(80)))), ((int)(((byte)(154)))));
-            this.btn_giris.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_giris.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_giris.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_giris.ForeColor = System.Drawing.Color.White;
-            this.btn_giris.Location = new System.Drawing.Point(117, 150);
-            this.btn_giris.Name = "btn_giris";
-            this.btn_giris.Size = new System.Drawing.Size(131, 36);
-            this.btn_giris.TabIndex = 6;
-            this.btn_giris.Text = "Ekle";
-            this.btn_giris.UseVisualStyleBackColor = false;
+            this.btn_add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(80)))), ((int)(((byte)(154)))));
+            this.btn_add.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_add.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_add.ForeColor = System.Drawing.Color.White;
+            this.btn_add.Location = new System.Drawing.Point(117, 150);
+            this.btn_add.Name = "btn_add";
+            this.btn_add.Size = new System.Drawing.Size(131, 36);
+            this.btn_add.TabIndex = 6;
+            this.btn_add.Text = "Ekle";
+            this.btn_add.UseVisualStyleBackColor = false;
+            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
+            // 
+            // product_id
+            // 
+            this.product_id.HeaderText = "İD";
+            this.product_id.Name = "product_id";
+            this.product_id.ReadOnly = true;
+            this.product_id.Width = 120;
+            // 
+            // product_name
+            // 
+            this.product_name.HeaderText = "Name";
+            this.product_name.Name = "product_name";
+            this.product_name.ReadOnly = true;
+            this.product_name.Width = 120;
+            // 
+            // cateogry_id
+            // 
+            this.cateogry_id.HeaderText = "Kategori";
+            this.cateogry_id.Name = "cateogry_id";
+            this.cateogry_id.ReadOnly = true;
+            this.cateogry_id.Width = 120;
+            // 
+            // unit_price
+            // 
+            this.unit_price.HeaderText = "Birim Fiyat";
+            this.unit_price.Name = "unit_price";
+            this.unit_price.ReadOnly = true;
+            this.unit_price.Width = 120;
+            // 
+            // current_stock
+            // 
+            this.current_stock.HeaderText = "Mevcut Stok";
+            this.current_stock.Name = "current_stock";
+            this.current_stock.ReadOnly = true;
+            this.current_stock.Width = 120;
+            // 
+            // min_stock_level
+            // 
+            this.min_stock_level.HeaderText = "Mininmum stok leveli";
+            this.min_stock_level.Name = "min_stock_level";
+            this.min_stock_level.ReadOnly = true;
+            this.min_stock_level.Width = 120;
+            // 
+            // cmbox_ware_house
+            // 
+            this.cmbox_ware_house.FormattingEnabled = true;
+            this.cmbox_ware_house.Location = new System.Drawing.Point(641, 78);
+            this.cmbox_ware_house.Name = "cmbox_ware_house";
+            this.cmbox_ware_house.Size = new System.Drawing.Size(239, 21);
+            this.cmbox_ware_house.TabIndex = 22;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label7.Location = new System.Drawing.Point(586, 78);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(40, 17);
+            this.label7.TabIndex = 23;
+            this.label7.Text = "Depo";
             // 
             // usr_products_maganement
             // 
@@ -260,7 +338,7 @@ namespace stok_
             this.Name = "usr_products_maganement";
             this.Size = new System.Drawing.Size(1002, 496);
             this.Load += new System.EventHandler(this.products_management_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.data_grid_products)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -271,23 +349,31 @@ namespace stok_
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView data_grid_products;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtbox_password;
+        private System.Windows.Forms.TextBox txtbox_unit_price;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtbox_user_name;
+        private System.Windows.Forms.TextBox txtbox_product_name;
         private System.Windows.Forms.Button btn_clear;
         private System.Windows.Forms.Button btn_del;
         private System.Windows.Forms.Button btn_update;
-        private System.Windows.Forms.Button btn_giris;
+        private System.Windows.Forms.Button btn_add;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox txt_box_current_stock;
+        private System.Windows.Forms.TextBox txtbox_min_stock;
+        private System.Windows.Forms.ComboBox cmbox_category_id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn product_id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn product_name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cateogry_id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn unit_price;
+        private System.Windows.Forms.DataGridViewTextBoxColumn current_stock;
+        private System.Windows.Forms.DataGridViewTextBoxColumn min_stock_level;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox cmbox_ware_house;
     }
 }

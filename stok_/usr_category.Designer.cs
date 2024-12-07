@@ -31,16 +31,18 @@ namespace stok_
         {
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.data_grid_category = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtbox_user_name = new System.Windows.Forms.TextBox();
+            this.txtbox_category_name = new System.Windows.Forms.TextBox();
             this.btn_clear = new System.Windows.Forms.Button();
             this.btn_del = new System.Windows.Forms.Button();
             this.btn_update = new System.Windows.Forms.Button();
-            this.btn_giris = new System.Windows.Forms.Button();
+            this.btn_add = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.category_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.category_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.data_grid_category)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,7 +51,7 @@ namespace stok_
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(29, 13);
+            this.label1.Location = new System.Drawing.Point(29, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(148, 25);
             this.label1.TabIndex = 1;
@@ -59,19 +61,23 @@ namespace stok_
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.dataGridView1);
-            this.panel1.Location = new System.Drawing.Point(107, 47);
+            this.panel1.Controls.Add(this.data_grid_category);
+            this.panel1.Location = new System.Drawing.Point(298, 36);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(789, 235);
+            this.panel1.Size = new System.Drawing.Size(434, 235);
             this.panel1.TabIndex = 7;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // dataGridView1
+            // data_grid_category
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(34, 41);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(730, 181);
-            this.dataGridView1.TabIndex = 0;
+            this.data_grid_category.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.data_grid_category.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.category_id,
+            this.category_name});
+            this.data_grid_category.Location = new System.Drawing.Point(183, 20);
+            this.data_grid_category.Name = "data_grid_category";
+            this.data_grid_category.Size = new System.Drawing.Size(241, 181);
+            this.data_grid_category.TabIndex = 0;
             // 
             // label2
             // 
@@ -83,12 +89,12 @@ namespace stok_
             this.label2.TabIndex = 11;
             this.label2.Text = "Kategori Adı";
             // 
-            // txtbox_user_name
+            // txtbox_category_name
             // 
-            this.txtbox_user_name.Location = new System.Drawing.Point(376, 61);
-            this.txtbox_user_name.Name = "txtbox_user_name";
-            this.txtbox_user_name.Size = new System.Drawing.Size(148, 20);
-            this.txtbox_user_name.TabIndex = 10;
+            this.txtbox_category_name.Location = new System.Drawing.Point(376, 61);
+            this.txtbox_category_name.Name = "txtbox_category_name";
+            this.txtbox_category_name.Size = new System.Drawing.Size(148, 20);
+            this.txtbox_category_name.TabIndex = 10;
             // 
             // btn_clear
             // 
@@ -132,33 +138,44 @@ namespace stok_
             this.btn_update.Text = "Güncelle";
             this.btn_update.UseVisualStyleBackColor = false;
             // 
-            // btn_giris
+            // btn_add
             // 
-            this.btn_giris.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(80)))), ((int)(((byte)(154)))));
-            this.btn_giris.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_giris.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_giris.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_giris.ForeColor = System.Drawing.Color.White;
-            this.btn_giris.Location = new System.Drawing.Point(117, 150);
-            this.btn_giris.Name = "btn_giris";
-            this.btn_giris.Size = new System.Drawing.Size(131, 36);
-            this.btn_giris.TabIndex = 6;
-            this.btn_giris.Text = "Ekle";
-            this.btn_giris.UseVisualStyleBackColor = false;
+            this.btn_add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(80)))), ((int)(((byte)(154)))));
+            this.btn_add.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_add.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_add.ForeColor = System.Drawing.Color.White;
+            this.btn_add.Location = new System.Drawing.Point(117, 150);
+            this.btn_add.Name = "btn_add";
+            this.btn_add.Size = new System.Drawing.Size(131, 36);
+            this.btn_add.TabIndex = 6;
+            this.btn_add.Text = "Ekle";
+            this.btn_add.UseVisualStyleBackColor = false;
+            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.txtbox_user_name);
+            this.panel2.Controls.Add(this.txtbox_category_name);
             this.panel2.Controls.Add(this.btn_clear);
             this.panel2.Controls.Add(this.btn_del);
             this.panel2.Controls.Add(this.btn_update);
-            this.panel2.Controls.Add(this.btn_giris);
+            this.panel2.Controls.Add(this.btn_add);
             this.panel2.Location = new System.Drawing.Point(107, 302);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(789, 189);
             this.panel2.TabIndex = 8;
+            // 
+            // category_id
+            // 
+            this.category_id.HeaderText = "İD";
+            this.category_id.Name = "category_id";
+            // 
+            // category_name
+            // 
+            this.category_name.HeaderText = "AD";
+            this.category_name.Name = "category_name";
             // 
             // usr_category
             // 
@@ -168,9 +185,10 @@ namespace stok_
             this.Controls.Add(this.panel2);
             this.Name = "usr_category";
             this.Size = new System.Drawing.Size(1002, 496);
+            this.Load += new System.EventHandler(this.usr_category_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.data_grid_category)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
@@ -180,13 +198,15 @@ namespace stok_
         #endregion
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView data_grid_category;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtbox_user_name;
+        private System.Windows.Forms.TextBox txtbox_category_name;
         private System.Windows.Forms.Button btn_clear;
         private System.Windows.Forms.Button btn_del;
         private System.Windows.Forms.Button btn_update;
-        private System.Windows.Forms.Button btn_giris;
+        private System.Windows.Forms.Button btn_add;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn category_id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn category_name;
     }
 }
