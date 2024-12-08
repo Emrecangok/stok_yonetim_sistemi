@@ -46,5 +46,10 @@ namespace stok_
         {
             mouseDown = false;
         }
+
+        private void add_product_to_warehouse_form_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
