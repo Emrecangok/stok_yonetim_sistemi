@@ -89,8 +89,8 @@ namespace stok_
 
         private void products_tsm_down_Click(object sender, EventArgs e)
         {
-            usr_products_maganement usr = new usr_products_maganement();
-            usrmg.add_user_control(usr, pnl_screen);
+            //usr_products_maganement usr = new usr_products_maganement();
+           // usrmg.add_user_control(usr, pnl_screen); Burası alt bir menüye eklenecek(urun ekle)
 
         }
 
@@ -129,6 +129,27 @@ namespace stok_
         private void repot_mg_tsm_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void products_tsp_add_down_Click(object sender, EventArgs e)
+        {
+            usr_products_maganement usr = new usr_products_maganement();
+            usrmg.add_user_control(usr, pnl_screen); 
+
+        }
+
+        private void inter_warehouse_transfer_tsm_Click(object sender, EventArgs e)
+        {
+            stock_transacition_form frm = new stock_transacition_form();
+            frm.Show();
+
+        
+        }
+
+        private void ad_product_tsm_down_Click(object sender, EventArgs e)
+        {
+            add_product_to_warehouse_form frm = new add_product_to_warehouse_form();
+            frm.Show();
         }
     }
 }

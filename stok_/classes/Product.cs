@@ -8,7 +8,6 @@ namespace stok_.classes
         public string description { get; set; }
         public double price { get; set; }
         public int stock_quantity { get; set; }
-        public int warehouse_id { get; set; }
         public int product_id { get; set; }
         public int category_id { get; set; }
         public int product_min_stock_level { get; set; }
@@ -33,11 +32,7 @@ namespace stok_.classes
                 return false;
             }
 
-            if (warehouse_id <= 0) // Depo ID sıfır ya da negatif olamaz
-            {
-                error_message = "Geçerli bir depo ID'si giriniz.";
-                return false;
-            }
+          
 
             if (category_id <= 0) // Kategori ID sıfır ya da negatif olamaz
             {

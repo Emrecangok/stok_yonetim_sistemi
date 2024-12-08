@@ -128,3 +128,5 @@ C:\Users\Emrecan\Desktop\stok_yonetim_sistemi\stok_\obj\Debug\stok_.usr_user_man
 C:\Users\Emrecan\Desktop\stok_yonetim_sistemi\stok_\obj\Debug\stok_.usr_products_maganement.resources
 C:\Users\Emrecan\Desktop\stok_yonetim_sistemi\stok_\obj\Debug\stok_.usr_reports.resources
 C:\Users\Emrecan\Desktop\stok_yonetim_sistemi\stok_\obj\Debug\stok_.usr_ware_house.resources
+C:\Users\Emrecan\Desktop\stok_yonetim_sistemi\stok_\obj\Debug\stok_.add_product_to_warehouse_form.resources
+C:\Users\Emrecan\Desktop\stok_yonetim_sistemi\stok_\obj\Debug\stok_.stock_transacition_form.resources

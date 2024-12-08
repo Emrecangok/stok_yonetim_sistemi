@@ -29,7 +29,7 @@ namespace stok_
             usr_products_maganement usr = new usr_products_maganement();
             //usrmg.add_user_control(usr);
             //usrmg.add_user_control(usr,);
-           
+
 
         }
 
@@ -45,7 +45,7 @@ namespace stok_
 
 
             cat.category_name = txtbox_category_name.Text;
-            
+
 
             if (!cat.is_valid(out error_message))
             {
@@ -66,5 +66,29 @@ namespace stok_
         {
             cat_repo.view_categories(data_grid_category);
         }
+
+        private void btn_update_Click(object sender, EventArgs e)
+        {
+            cat_repo.update_selected_category(data_grid_category, txtbox_category_name.Text);
+        }
+
+        private void btn_del_Click(object sender, EventArgs e)
+        {
+            cat_repo.delete_selected_category(data_grid_category);
+        }
+
+        private void data_grid_category_SelectionChanged(object sender, EventArgs e)
+        {
+            if (data_grid_category.SelectedRows.Count > 0)
+            {
+                // Seçilen satırı al
+                DataGridViewRow selected_row = data_grid_category.SelectedRows[0];
+
+                // Seçilen satırdaki verileri TextBox'lara aktar
+                txtbox_category_name.Text = selected_row.Cells["category_name"].Value.ToString();
+
+            }
+        }
     }
 }
+

@@ -112,5 +112,30 @@ namespace stok_.classes.sql_classes
                 MessageBox.Show("Lütfen silmek istediğiniz satırı seçin.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        // Kategorileri veritabanından çek ve ComboBox'a ekle
+        public void _load_categories_into_combo_box(ComboBox combo_box)
+        {
+            string query = "SELECT category_id, category_name FROM categories";
+            DataTable data_table = execute_query(query); // Veritabanı sorgusunu çalıştır
+
+            combo_box.Items.Clear(); // ComboBox'u temizle
+
+            combo_box.ValueMember = "category_id";
+            combo_box.DisplayMember = "category_name";
+            combo_box.DataSource = data_table;
+
+           
+        }
+
+
+
+
+
+
+
+
+
+
+
     }
 }

@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Npgsql;
 
@@ -11,28 +7,40 @@ namespace stok_.classes.sql_classes
 {
     class Products_repo : Db_helper
     {
-        public Products_repo(String connection_string) : base(connection_string) { }
+        public Products_repo(string connection_string) : base(connection_string) { }
 
+        // Ürün ekleme
         public void add_product(Product product)
         {
-            string query = "INSERT INTO products(product_name, category_id, unit_price, current_stock, min_stock_level) " +
-                           "VALUES(@name, @category_id, @price, @stock, @min_stock)";
+            string query = "INSERT INTO products(product_name, category_id, unit_price, min_stock_level) " +
+                           "VALUES(@name, @category_id, @price, @min_stock)";
             var parameters = new NpgsqlParameter[]
             {
                 new NpgsqlParameter("@name", product.name),
                 new NpgsqlParameter("@category_id", product.category_id),
                 new NpgsqlParameter("@price", product.price),
-                new NpgsqlParameter("@stock", product.stock_quantity),
                 new NpgsqlParameter("@min_stock", product.product_min_stock_level)
             };
 
             execute_non_query(query, parameters);
         }
 
+        // Ürün listeleme
         public void view_products(DataGridView gridView)
         {
             gridView.Rows.Clear();
-            string query = "SELECT product_id, product_name, category_id, unit_price, current_stock, min_stock_level FROM products";
+
+
+            string query = @"
+        SELECT 
+            p.product_id, 
+            p.product_name, 
+            c.category_name, 
+            p.unit_price, 
+            p.min_stock_level
+        FROM products AS p
+        JOIN categories AS c ON p.category_id = c.category_id";
+
 
             try
             {
@@ -46,14 +54,13 @@ namespace stok_.classes.sql_classes
                     gridView.Columns.Add("product_name", "Ürün Adı");
                     gridView.Columns.Add("category_id", "Kategori ID");
                     gridView.Columns.Add("unit_price", "Birim Fiyat");
-                    gridView.Columns.Add("current_stock", "Mevcut Stok");
                     gridView.Columns.Add("min_stock_level", "Minimum Stok Seviyesi");
                 }
 
                 foreach (DataRow row in dataTable.Rows)
                 {
-                    gridView.Rows.Add(row["product_id"], row["product_name"], row["category_id"],
-                                      row["unit_price"], row["current_stock"], row["min_stock_level"]);
+                    gridView.Rows.Add(row["product_id"], row["product_name"], row["category_name"],
+                                      row["unit_price"], row["min_stock_level"]);
                 }
             }
             catch (Exception ex)
@@ -62,10 +69,11 @@ namespace stok_.classes.sql_classes
             }
         }
 
-        public void update_product(int productId, string newName, int newCategoryId, decimal newPrice, int newStock, int newMinStock)
+        // Ürün güncelleme
+        public void update_product(int productId, string newName, int newCategoryId, decimal newPrice, int newMinStock)
         {
             string query = "UPDATE products SET product_name = @newName, category_id = @newCategoryId, " +
-                           "unit_price = @newPrice, current_stock = @newStock, min_stock_level = @newMinStock " +
+                           "unit_price = @newPrice, min_stock_level = @newMinStock " +
                            "WHERE product_id = @productId";
 
             var parameters = new NpgsqlParameter[]
@@ -73,7 +81,6 @@ namespace stok_.classes.sql_classes
                 new NpgsqlParameter("@newName", newName),
                 new NpgsqlParameter("@newCategoryId", newCategoryId),
                 new NpgsqlParameter("@newPrice", newPrice),
-                new NpgsqlParameter("@newStock", newStock),
                 new NpgsqlParameter("@newMinStock", newMinStock),
                 new NpgsqlParameter("@productId", productId)
             };
@@ -81,13 +88,13 @@ namespace stok_.classes.sql_classes
             execute_non_query(query, parameters);
         }
 
-        public void update_selected_product(DataGridView gridView, string newName, int newCategoryId, decimal newPrice, int newStock, int newMinStock)
+        public void update_selected_product(DataGridView gridView, string newName, int newCategoryId, decimal newPrice, int newMinStock)
         {
             if (gridView.SelectedRows.Count > 0)
             {
                 int productId = Convert.ToInt32(gridView.SelectedRows[0].Cells["product_id"].Value);
 
-                update_product(productId, newName, newCategoryId, newPrice, newStock, newMinStock);
+                update_product(productId, newName, newCategoryId, newPrice, newMinStock);
 
                 MessageBox.Show("Ürün başarıyla güncellendi.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -99,6 +106,7 @@ namespace stok_.classes.sql_classes
             }
         }
 
+        // Ürün silme
         public void delete_product(int productId)
         {
             string query = "DELETE FROM products WHERE product_id = @productId";

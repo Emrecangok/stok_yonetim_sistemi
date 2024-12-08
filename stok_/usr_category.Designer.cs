@@ -32,6 +32,8 @@ namespace stok_
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.data_grid_category = new System.Windows.Forms.DataGridView();
+            this.category_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.category_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label2 = new System.Windows.Forms.Label();
             this.txtbox_category_name = new System.Windows.Forms.TextBox();
             this.btn_clear = new System.Windows.Forms.Button();
@@ -39,8 +41,6 @@ namespace stok_
             this.btn_update = new System.Windows.Forms.Button();
             this.btn_add = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.category_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.category_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.data_grid_category)).BeginInit();
             this.panel2.SuspendLayout();
@@ -78,6 +78,17 @@ namespace stok_
             this.data_grid_category.Name = "data_grid_category";
             this.data_grid_category.Size = new System.Drawing.Size(241, 181);
             this.data_grid_category.TabIndex = 0;
+            this.data_grid_category.SelectionChanged += new System.EventHandler(this.data_grid_category_SelectionChanged);
+            // 
+            // category_id
+            // 
+            this.category_id.HeaderText = "İD";
+            this.category_id.Name = "category_id";
+            // 
+            // category_name
+            // 
+            this.category_name.HeaderText = "AD";
+            this.category_name.Name = "category_name";
             // 
             // label2
             // 
@@ -123,6 +134,7 @@ namespace stok_
             this.btn_del.TabIndex = 8;
             this.btn_del.Text = "Sil";
             this.btn_del.UseVisualStyleBackColor = false;
+            this.btn_del.Click += new System.EventHandler(this.btn_del_Click);
             // 
             // btn_update
             // 
@@ -137,6 +149,7 @@ namespace stok_
             this.btn_update.TabIndex = 7;
             this.btn_update.Text = "Güncelle";
             this.btn_update.UseVisualStyleBackColor = false;
+            this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
             // 
             // btn_add
             // 
@@ -166,16 +179,6 @@ namespace stok_
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(789, 189);
             this.panel2.TabIndex = 8;
-            // 
-            // category_id
-            // 
-            this.category_id.HeaderText = "İD";
-            this.category_id.Name = "category_id";
-            // 
-            // category_name
-            // 
-            this.category_name.HeaderText = "AD";
-            this.category_name.Name = "category_name";
             // 
             // usr_category
             // 

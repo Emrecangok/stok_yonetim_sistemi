@@ -1,13 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Npgsql;
+using stok_.classes; // current_user ve User sınıfına erişim için ekle
 
 namespace stok_
 {
@@ -20,17 +15,16 @@ namespace stok_
 
         NpgsqlConnection con = new NpgsqlConnection("server=localHost;port=5432;" +
             "Database=stok_yonetim;user Id=postgres; Password=can12345");
+
         private void btn_giris_Click(object sender, EventArgs e)
         {
             try
             {
                 con.Open();
-                //MessageBox.Show("Bağlantı başarılı bir şekilde açıldı!");
-
                 string sql = "SELECT * FROM users WHERE user_name = @username AND password = @pass";
                 NpgsqlCommand cm = new NpgsqlCommand(sql, con);
 
-                cm.Parameters.AddWithValue("@username",txtbox_kullanici_adi.Text.Trim());
+                cm.Parameters.AddWithValue("@username", txtbox_kullanici_adi.Text.Trim());
                 cm.Parameters.AddWithValue("@pass", txtbox_sifre.Text.Trim());
 
                 DataTable dt = new DataTable();
@@ -39,7 +33,29 @@ namespace stok_
 
                 if (dt.Rows.Count > 0)
                 {
-                    MessageBox.Show("Doğru şifre girdiniz!");
+                    // Kullanıcı bilgilerini DataTable'dan al
+                    DataRow row = dt.Rows[0];
+
+                    User user = new User
+                    {
+                        id = Convert.ToInt32(row["user_id"]),
+                        name = row["user_name"].ToString(),
+                        //email = row["email"].ToString(),
+                        password = row["password"].ToString(),
+                        role = row["rol_id"].ToString()
+                    };
+
+                    // current_user sınıfına atama yap
+                    current_user.set_user(user);
+
+                    MessageBox.Show($"Hoş geldiniz, {current_user.name}!");
+
+                    // Sonraki forma geçiş
+                    
+                    admin_main_form frm = new admin_main_form();
+                    frm.Show();
+                    this.Hide();
+
                 }
                 else
                 {
@@ -57,7 +73,6 @@ namespace stok_
                     con.Close();
                 }
             }
-
         }
     }
 }

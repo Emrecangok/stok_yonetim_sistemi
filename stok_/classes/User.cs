@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace stok_.classes
 {
-    class User
+   public class User
     {
         public int id { get; set; }
         public string name { get; set; }

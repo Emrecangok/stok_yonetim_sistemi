@@ -38,6 +38,7 @@ namespace stok_
             this.manin_menu_tsm = new System.Windows.Forms.ToolStripMenuItem();
             this.stock_mg_tsm = new System.Windows.Forms.ToolStripMenuItem();
             this.products_tsm_down = new System.Windows.Forms.ToolStripMenuItem();
+            this.products_tsp_add_down = new System.Windows.Forms.ToolStripMenuItem();
             this.category_tsm_down = new System.Windows.Forms.ToolStripMenuItem();
             this.stock_tsm_down = new System.Windows.Forms.ToolStripMenuItem();
             this.user_mg_tsm = new System.Windows.Forms.ToolStripMenuItem();
@@ -50,6 +51,8 @@ namespace stok_
             this.ware_house_tsm_down = new System.Windows.Forms.ToolStripMenuItem();
             this.p_ware_house_tsm_down = new System.Windows.Forms.ToolStripMenuItem();
             this.supplier_mg_tsm = new System.Windows.Forms.ToolStripMenuItem();
+            this.inter_warehouse_transfer_tsm = new System.Windows.Forms.ToolStripMenuItem();
+            this.ad_product_tsm_down = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.menu_strip_main.SuspendLayout();
             this.SuspendLayout();
@@ -116,8 +119,8 @@ namespace stok_
             // 
             this.stock_mg_tsm.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.products_tsm_down,
-            this.category_tsm_down,
-            this.stock_tsm_down});
+            this.stock_tsm_down,
+            this.category_tsm_down});
             this.stock_mg_tsm.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.stock_mg_tsm.ForeColor = System.Drawing.Color.White;
             this.stock_mg_tsm.Image = global::stok_.Properties.Resources.stock_market;
@@ -128,11 +131,22 @@ namespace stok_
             // products_tsm_down
             // 
             this.products_tsm_down.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
+            this.products_tsm_down.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.products_tsp_add_down});
             this.products_tsm_down.ForeColor = System.Drawing.Color.White;
             this.products_tsm_down.Name = "products_tsm_down";
             this.products_tsm_down.Size = new System.Drawing.Size(216, 30);
             this.products_tsm_down.Text = "Ürünler";
             this.products_tsm_down.Click += new System.EventHandler(this.products_tsm_down_Click);
+            // 
+            // products_tsp_add_down
+            // 
+            this.products_tsp_add_down.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
+            this.products_tsp_add_down.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.products_tsp_add_down.Name = "products_tsp_add_down";
+            this.products_tsp_add_down.Size = new System.Drawing.Size(180, 30);
+            this.products_tsp_add_down.Text = "Ürün CRUD";
+            this.products_tsp_add_down.Click += new System.EventHandler(this.products_tsp_add_down_Click);
             // 
             // category_tsm_down
             // 
@@ -146,6 +160,9 @@ namespace stok_
             // stock_tsm_down
             // 
             this.stock_tsm_down.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
+            this.stock_tsm_down.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.inter_warehouse_transfer_tsm,
+            this.ad_product_tsm_down});
             this.stock_tsm_down.ForeColor = System.Drawing.Color.White;
             this.stock_tsm_down.Name = "stock_tsm_down";
             this.stock_tsm_down.Size = new System.Drawing.Size(216, 30);
@@ -249,6 +266,24 @@ namespace stok_
             this.supplier_mg_tsm.Size = new System.Drawing.Size(192, 29);
             this.supplier_mg_tsm.Text = "Tedarikci Yönetimi";
             // 
+            // inter_warehouse_transfer_tsm
+            // 
+            this.inter_warehouse_transfer_tsm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
+            this.inter_warehouse_transfer_tsm.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.inter_warehouse_transfer_tsm.Name = "inter_warehouse_transfer_tsm";
+            this.inter_warehouse_transfer_tsm.Size = new System.Drawing.Size(260, 30);
+            this.inter_warehouse_transfer_tsm.Text = "Depolar Arası Taşıma";
+            this.inter_warehouse_transfer_tsm.Click += new System.EventHandler(this.inter_warehouse_transfer_tsm_Click);
+            // 
+            // ad_product_tsm_down
+            // 
+            this.ad_product_tsm_down.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
+            this.ad_product_tsm_down.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.ad_product_tsm_down.Name = "ad_product_tsm_down";
+            this.ad_product_tsm_down.Size = new System.Drawing.Size(260, 30);
+            this.ad_product_tsm_down.Text = "Depoya Stok Ekle";
+            this.ad_product_tsm_down.Click += new System.EventHandler(this.ad_product_tsm_down_Click);
+            // 
             // admin_main_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -291,5 +326,8 @@ namespace stok_
         private System.Windows.Forms.ToolStripMenuItem warehouse_mg_tsm;
         private System.Windows.Forms.ToolStripMenuItem ware_house_tsm_down;
         private System.Windows.Forms.ToolStripMenuItem p_ware_house_tsm_down;
+        private System.Windows.Forms.ToolStripMenuItem products_tsp_add_down;
+        private System.Windows.Forms.ToolStripMenuItem inter_warehouse_transfer_tsm;
+        private System.Windows.Forms.ToolStripMenuItem ad_product_tsm_down;
     }
 }
