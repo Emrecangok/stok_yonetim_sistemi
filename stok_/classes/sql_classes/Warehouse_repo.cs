@@ -134,6 +134,20 @@ namespace stok_.classes.sql_classes
                 MessageBox.Show("Lütfen silmek istediğiniz satırı seçin.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        // Depoları veritabanından çek ve ComboBox'a ekle
+        public void _load_warehouses_into_combo_box(ComboBox combo_box)
+        {
+            string query = "SELECT ware_house_id, ware_house_name FROM ware_houses";
+            DataTable data_table = execute_query(query); // Veritabanı sorgusunu çalıştır
+
+            combo_box.Items.Clear(); // ComboBox'u temizle
+
+            combo_box.ValueMember = "ware_house_id";
+            combo_box.DisplayMember = "ware_house_name";
+            combo_box.DataSource = data_table;
+
+
+        }
 
 
 

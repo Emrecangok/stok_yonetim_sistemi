@@ -29,12 +29,12 @@ namespace stok_
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbl_quit = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -45,13 +45,13 @@ namespace stok_
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_box_product_quantity = new System.Windows.Forms.TextBox();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.line_graph = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label4 = new System.Windows.Forms.Label();
-            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.pie_graph = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.line_graph)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pie_graph)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -112,6 +112,7 @@ namespace stok_
             this.cmb_box_product_name.Name = "cmb_box_product_name";
             this.cmb_box_product_name.Size = new System.Drawing.Size(121, 21);
             this.cmb_box_product_name.TabIndex = 28;
+            this.cmb_box_product_name.SelectedIndexChanged += new System.EventHandler(this.cmb_box_product_name_SelectedIndexChanged);
             // 
             // cmb_box_warehouse_name
             // 
@@ -120,6 +121,7 @@ namespace stok_
             this.cmb_box_warehouse_name.Name = "cmb_box_warehouse_name";
             this.cmb_box_warehouse_name.Size = new System.Drawing.Size(121, 21);
             this.cmb_box_warehouse_name.TabIndex = 27;
+            this.cmb_box_warehouse_name.SelectedIndexChanged += new System.EventHandler(this.cmb_box_warehouse_name_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -158,22 +160,22 @@ namespace stok_
             this.txt_box_product_quantity.Size = new System.Drawing.Size(121, 20);
             this.txt_box_product_quantity.TabIndex = 42;
             // 
-            // chart1
+            // line_graph
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(239, 92);
-            this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(313, 164);
-            this.chart1.TabIndex = 43;
-            this.chart1.Text = "chart1";
+            chartArea3.Name = "ChartArea1";
+            this.line_graph.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.line_graph.Legends.Add(legend3);
+            this.line_graph.Location = new System.Drawing.Point(239, 92);
+            this.line_graph.Name = "line_graph";
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            this.line_graph.Series.Add(series3);
+            this.line_graph.Size = new System.Drawing.Size(313, 164);
+            this.line_graph.TabIndex = 43;
+            this.line_graph.Text = "chart1";
             // 
             // label4
             // 
@@ -186,22 +188,22 @@ namespace stok_
             this.label4.TabIndex = 21;
             this.label4.Text = "Seçilen Ürünün Çizgi Grafiği";
             // 
-            // chart2
+            // pie_graph
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart2.Legends.Add(legend2);
-            this.chart2.Location = new System.Drawing.Point(244, 322);
-            this.chart2.Name = "chart2";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chart2.Series.Add(series2);
-            this.chart2.Size = new System.Drawing.Size(313, 164);
-            this.chart2.TabIndex = 44;
-            this.chart2.Text = "chart2";
+            chartArea4.Name = "ChartArea1";
+            this.pie_graph.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.pie_graph.Legends.Add(legend4);
+            this.pie_graph.Location = new System.Drawing.Point(244, 322);
+            this.pie_graph.Name = "pie_graph";
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series4.Legend = "Legend1";
+            series4.Name = "Series1";
+            this.pie_graph.Series.Add(series4);
+            this.pie_graph.Size = new System.Drawing.Size(313, 164);
+            this.pie_graph.TabIndex = 44;
+            this.pie_graph.Text = "chart2";
             // 
             // label5
             // 
@@ -220,9 +222,9 @@ namespace stok_
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(557, 522);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.chart2);
+            this.Controls.Add(this.pie_graph);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.chart1);
+            this.Controls.Add(this.line_graph);
             this.Controls.Add(this.txt_box_product_quantity);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
@@ -238,8 +240,8 @@ namespace stok_
             this.Load += new System.EventHandler(this.add_product_to_warehouse_form_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.line_graph)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pie_graph)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -257,9 +259,9 @@ namespace stok_
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txt_box_product_quantity;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart line_graph;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
+        private System.Windows.Forms.DataVisualization.Charting.Chart pie_graph;
         private System.Windows.Forms.Label label5;
     }
 }

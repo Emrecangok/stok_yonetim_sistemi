@@ -136,5 +136,19 @@ namespace stok_.classes.sql_classes
                 MessageBox.Show("Lütfen silmek istediğiniz satırı seçin.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        // Ürünleri veritabanından çek ve ComboBox'a ekle
+        public void _load_products_into_combo_box(ComboBox combo_box)
+        {
+            string query = "SELECT product_id, product_name FROM products";
+            DataTable data_table = execute_query(query); // Veritabanı sorgusunu çalıştır
+
+            combo_box.Items.Clear(); // ComboBox'u temizle
+
+            combo_box.ValueMember = "product_id";
+            combo_box.DisplayMember = "product_name";
+            combo_box.DataSource = data_table;
+
+
+        }
     }
 }

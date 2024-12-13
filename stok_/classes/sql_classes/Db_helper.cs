@@ -60,7 +60,8 @@ namespace stok_.classes.sql_classes
         }
         public DataTable execute_query(string query, params NpgsqlParameter[] parameters)
         {
-             var connection = get_connection();
+            var connection = get_connection();
+            var dataTable = new DataTable(); // Her durumda döndürülecek bir DataTable nesnesi oluştur.
             try
             {
                 var command = new NpgsqlCommand(query, connection);
@@ -69,15 +70,19 @@ namespace stok_.classes.sql_classes
                     command.Parameters.AddRange(parameters);
 
                 var adapter = new NpgsqlDataAdapter(command);
-                var dataTable = new DataTable();
-                adapter.Fill(dataTable);
-
-                return dataTable;
+                adapter.Fill(dataTable); // Verileri doldurmayı dene.
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Sorgu çalıştırılırken bir hata oluştu: \n{ex.Message}", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                // Eğer hata oluşursa, burada boş bir DataTable döndürülmeye devam edecek.
             }
             finally
             {
-                close_connection(connection);
+                close_connection(connection); // Bağlantıyı kapat.
             }
+
+            return dataTable; // Veri olmasa bile boş DataTable döndür.
         }
         public void execute_non_query(string query, params NpgsqlParameter[] parameters)
         {

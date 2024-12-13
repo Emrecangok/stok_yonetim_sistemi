@@ -1,62 +1,118 @@
 ﻿using System;
 using System.Data;
-using Npgsql;
-using stok_.classes.sql_classes; // Db_helper erişimi için
-using stok_.classes; // current_user sınıfına erişim için
 using System.Windows.Forms;
+using Npgsql;
+using stok_.classes;
+using stok_.classes.sql_classes;
 
 namespace stok_.classes.sql_classes
 {
-    public class Stock_transacition_repo : Db_helper
+    class stock_transaction_repo : Db_helper
     {
-        public Stock_transacition_repo(string connection_string) : base(connection_string) { }
+        public stock_transaction_repo(string connection_string) : base(connection_string) { }
 
-        public void add_stock_transaction(int warehouseId, int productId, int quantity)
+        // Depoya ürün ekleme
+        public void add_stock(int product_id, int warehouse_id, int quantity, int user_id)
         {
-            // Transaction tablosuna ekleme sorgusu
-            string transactionQuery = @"
-                INSERT INTO stock_transactions 
-                (user_id, warehouse_id, product_id, quantity, transaction_date) 
-                VALUES (@userId, @warehouseId, @productId, @quantity, @date)";
+            string query = @"
+                INSERT INTO stock_transactions (user_id, warehouse_id, product_id, quantity, transaction_type, transaction_date)
+                VALUES (@user_id, @warehouse_id, @product_id, @quantity, 'add', @transaction_date);
+
+                INSERT INTO warehouse_stock (warehouse_id, product_id, stock_quantity)
+                VALUES (@warehouse_id, @product_id, @quantity)
+                ON CONFLICT (warehouse_id, product_id)
+                DO UPDATE SET stock_quantity = warehouse_stock.stock_quantity + @quantity;";
 
             var parameters = new NpgsqlParameter[]
             {
-                new NpgsqlParameter("@userId", current_user.id),
-                new NpgsqlParameter("@warehouseId", warehouseId),
-                new NpgsqlParameter("@productId", productId),
+                new NpgsqlParameter("@user_id", user_id),
+                new NpgsqlParameter("@warehouse_id", warehouse_id),
+                new NpgsqlParameter("@product_id", product_id),
                 new NpgsqlParameter("@quantity", quantity),
-                new NpgsqlParameter("@date", DateTime.Now)
+                new NpgsqlParameter("@transaction_date", DateTime.Now)
             };
 
-            // Stok güncelleme sorgusu
-            string updateStockQuery = @"
-                INSERT INTO warehouse_stock (warehouse_id, product_id, stock_quantity) 
-                VALUES (@warehouseId, @productId, @quantity)
-                ON CONFLICT (warehouse_id, product_id) 
-                DO UPDATE SET stock_quantity = warehouse_stock.stock_quantity + @quantity";
+            execute_non_query(query, parameters);
+            MessageBox.Show("Ürün başarıyla eklendi.");
+        }
 
-            var updateParameters = new NpgsqlParameter[]
+        // Depodan ürün çıkarma
+        public void remove_stock(int product_id, int warehouse_id, int quantity, int user_id)
+        {
+            string query = @"
+                INSERT INTO stock_transactions (user_id, warehouse_id, product_id, quantity, transaction_type, transaction_date)
+                VALUES (@user_id, @warehouse_id, @product_id, @quantity, 'remove', @transaction_date);
+
+                UPDATE warehouse_stock
+                SET stock_quantity = stock_quantity - @quantity
+                WHERE warehouse_id = @warehouse_id AND product_id = @product_id AND stock_quantity >= @quantity;";
+
+            var parameters = new NpgsqlParameter[]
             {
-                new NpgsqlParameter("@warehouseId", warehouseId),
-                new NpgsqlParameter("@productId", productId),
-                new NpgsqlParameter("@quantity", quantity)
+                new NpgsqlParameter("@user_id", user_id),
+                new NpgsqlParameter("@warehouse_id", warehouse_id),
+                new NpgsqlParameter("@product_id", product_id),
+                new NpgsqlParameter("@quantity", quantity),
+                new NpgsqlParameter("@transaction_date", DateTime.Now)
             };
 
-            try
-            {
-                // Transaction kaydı ekle
-                execute_non_query(transactionQuery, parameters);
+            execute_non_query(query, parameters);
+            MessageBox.Show("Ürün başarıyla çıkarıldı.");
+        }
 
-                // Stok miktarını güncelle
-                execute_non_query(updateStockQuery, updateParameters);
+        // İki depo arasında ürün transferi
+        public void warehouse_transfer(int product_id, int source_warehouse_id, int target_warehouse_id, int quantity, int user_id)
+        {
+            string query = @"
+                INSERT INTO stock_transactions (user_id, warehouse_id, product_id, quantity, transaction_type, transaction_date)
+                VALUES (@user_id, @source_warehouse_id, @product_id, @quantity, 'transfer_out', @transaction_date),
+                       (@user_id, @target_warehouse_id, @product_id, @quantity, 'transfer_in', @transaction_date);
 
-                MessageBox.Show("Ürün başarılı bir şekilde eklendi ve işlem kaydedildi.", "Bilgi", 
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            catch (Exception ex)
+                UPDATE warehouse_stock
+                SET stock_quantity = stock_quantity - @quantity
+                WHERE warehouse_id = @source_warehouse_id AND product_id = @product_id AND stock_quantity >= @quantity;
+
+                INSERT INTO warehouse_stock (warehouse_id, product_id, stock_quantity)
+                VALUES (@target_warehouse_id, @product_id, @quantity)
+                ON CONFLICT (warehouse_id, product_id)
+                DO UPDATE SET stock_quantity = warehouse_stock.stock_quantity + @quantity;";
+
+            var parameters = new NpgsqlParameter[]
             {
-                MessageBox.Show($"Stok ekleme sırasında bir hata oluştu: {ex.Message}", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+                new NpgsqlParameter("@user_id", user_id),
+                new NpgsqlParameter("@source_warehouse_id", source_warehouse_id),
+                new NpgsqlParameter("@target_warehouse_id", target_warehouse_id),
+                new NpgsqlParameter("@product_id", product_id),
+                new NpgsqlParameter("@quantity", quantity),
+                new NpgsqlParameter("@transaction_date", DateTime.Now)
+            };
+
+            execute_non_query(query, parameters);
+            MessageBox.Show("Ürün başarıyla transfer edildi.");
+        }
+
+        // Ürün satma
+        public void sell_product(int product_id, int warehouse_id, int quantity, int user_id)
+        {
+            string query = @"
+                INSERT INTO stock_transactions (user_id, warehouse_id, product_id, quantity, transaction_type, transaction_date)
+                VALUES (@user_id, @warehouse_id, @product_id, @quantity, 'sell', @transaction_date);
+
+                UPDATE warehouse_stock
+                SET stock_quantity = stock_quantity - @quantity
+                WHERE warehouse_id = @warehouse_id AND product_id = @product_id AND stock_quantity >= @quantity;";
+
+            var parameters = new NpgsqlParameter[]
+            {
+                new NpgsqlParameter("@user_id", user_id),
+                new NpgsqlParameter("@warehouse_id", warehouse_id),
+                new NpgsqlParameter("@product_id", product_id),
+                new NpgsqlParameter("@quantity", quantity),
+                new NpgsqlParameter("@transaction_date", DateTime.Now)
+            };
+
+            execute_non_query(query, parameters);
+            MessageBox.Show("Ürün başarıyla satıldı.");
         }
     }
 }

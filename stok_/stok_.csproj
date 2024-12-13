@@ -107,6 +107,7 @@
     <Compile Include="classes\Product.cs" />
     <Compile Include="classes\sql_classes\category_repo.cs" />
     <Compile Include="classes\sql_classes\Db_helper.cs" />
+    <Compile Include="classes\sql_classes\Graphics_repo.cs" />
     <Compile Include="classes\sql_classes\Products_repo.cs" />
     <Compile Include="classes\sql_classes\Stock_transacition_repo.cs" />
     <Compile Include="classes\sql_classes\Warehouse_repo.cs" />

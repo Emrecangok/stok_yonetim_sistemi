@@ -16,5 +16,15 @@ namespace stok_
         {
             InitializeComponent();
         }
+
+        private void btn_update_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_giris_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

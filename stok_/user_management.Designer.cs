@@ -213,6 +213,7 @@ namespace stok_
             this.btn_update.TabIndex = 7;
             this.btn_update.Text = "Güncelle";
             this.btn_update.UseVisualStyleBackColor = false;
+            this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
             // 
             // btn_giris
             // 
@@ -227,6 +228,7 @@ namespace stok_
             this.btn_giris.TabIndex = 6;
             this.btn_giris.Text = "Ekle";
             this.btn_giris.UseVisualStyleBackColor = false;
+            this.btn_giris.Click += new System.EventHandler(this.btn_giris_Click);
             // 
             // usr_user_management
             // 

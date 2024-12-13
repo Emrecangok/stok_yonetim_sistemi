@@ -31,7 +31,7 @@ namespace stok_.classes
                 error_message = "Stok miktarı negatif olamaz.";
                 return false;
             }
-
+            
           
 
             if (category_id <= 0) // Kategori ID sıfır ya da negatif olamaz
