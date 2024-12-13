@@ -16,5 +16,10 @@ namespace stok_
         {
             InitializeComponent();
         }
+
+        private void usr_reports_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

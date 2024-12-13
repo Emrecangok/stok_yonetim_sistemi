@@ -47,5 +47,10 @@ namespace stok_
         {
             mouseDown = false;
         }
+
+        private void stock_transacition_form_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -26,5 +26,10 @@ namespace stok_
         {
 
         }
+
+        private void usr_user_management_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

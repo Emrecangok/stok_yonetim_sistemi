@@ -1,4 +1,5 @@
-﻿using System;
+﻿using stok_.classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,10 +19,6 @@ namespace stok_
             InitializeComponent();
         }
 
-
-
-       
-     
         private void btn_user_management_Click(object sender, EventArgs e)
         {
             usr_user_management usr = new usr_user_management();
@@ -33,8 +30,6 @@ namespace stok_
         {
 
         }
-
-
 
         private void admin_main_form_Load(object sender, EventArgs e)
         {
@@ -150,6 +145,28 @@ namespace stok_
         {
             add_product_to_warehouse_form frm = new add_product_to_warehouse_form();
             frm.Show();
+        }
+
+        private void user_mg_tsm_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tedarikçilerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tedarikçiCRUDToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            usr_supplier usr_supplier = new usr_supplier();
+            usrmg.add_user_control(usr_supplier, pnl_screen);
+
+        }
+
+        private void supplier_mg_tsm_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

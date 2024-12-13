@@ -12,11 +12,11 @@ using stok_.classes;
 
 namespace stok_
 {
-    public partial class usr_category : UserControl
+    public partial class usr_supplier : UserControl
     {
-        Categories_repo cat_repo = new Categories_repo("server=localHost;port=5432;" +
+        Supplier_repo sup_repo = new Supplier_repo("server=localHost;port=5432;" +
            "Database=stok_yonetim_data;user Id=postgres; Password=12345");
-        public usr_category()
+        public usr_supplier()
         {
             InitializeComponent();
         }
@@ -28,7 +28,7 @@ namespace stok_
         {
             usr_products_maganement usr = new usr_products_maganement();
             //usrmg.add_user_control(usr);
-            //usrmg.add_user_control(usr,);
+            //usrmg.add_user_control(usr);
 
 
         }
@@ -41,53 +41,60 @@ namespace stok_
         private void btn_add_Click(object sender, EventArgs e)
         {
             string error_message;
-            Categories cat = new Categories();
+            Suppliers sup = new Suppliers();
 
 
-            cat.category_name = txtbox_category_name.Text;
+            sup.supplier_name = txtbox_supplier_name.Text;
+            sup.phone = txtbox_phone.Text;
 
 
-            if (!cat.is_valid(out error_message))
+            if (!sup.is_valid(out error_message))
             {
                 MessageBox.Show(error_message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
             else
             {
-                cat_repo.add_category(cat);
-                cat_repo.view_categories(data_grid_category);
-
-
+                sup_repo.add_supplier(sup);
+                sup_repo.view_suppliers(data_grid_supplier);
             }
 
         }
 
-        private void usr_category_Load(object sender, EventArgs e)
+        private void usr_supplier_Load(object sender, EventArgs e)
         {
-            cat_repo.view_categories(data_grid_category);
+            sup_repo.view_suppliers(data_grid_supplier);
         }
 
         private void btn_update_Click(object sender, EventArgs e)
         {
-            cat_repo.update_selected_category(data_grid_category, txtbox_category_name.Text);
+
+            sup_repo.update_selected_supplier(data_grid_supplier, txtbox_supplier_name.Text, txtbox_phone.Text);
         }
 
         private void btn_del_Click(object sender, EventArgs e)
         {
-            cat_repo.delete_selected_category(data_grid_category);
+            sup_repo.delete_supplier(txtbox_supplier_name.Text, txtbox_phone.Text);
+            sup_repo.delete_selected_supplier(data_grid_supplier);
         }
 
-        private void data_grid_category_SelectionChanged(object sender, EventArgs e)
+        private void data_grid_supplier_SelectionChanged(object sender, EventArgs e)
         {
-            if (data_grid_category.SelectedRows.Count > 0)
+            if (data_grid_supplier.SelectedRows.Count > 0)
             {
                 // Seçilen satırı al
-                DataGridViewRow selected_row = data_grid_category.SelectedRows[0];
+                DataGridViewRow selected_row = data_grid_supplier.SelectedRows[0];
 
                 // Seçilen satırdaki verileri TextBox'lara aktar
-                txtbox_category_name.Text = selected_row.Cells["category_name"].Value.ToString();
+                txtbox_supplier_name.Text = selected_row.Cells["supplier_name"].Value.ToString();
 
             }
+        }
+
+        private void btn_clear_Click(object sender, EventArgs e)
+        {
+            txtbox_supplier_name.Text = string.Empty;
+            txtbox_phone.Text = string.Empty;
         }
     }
 }

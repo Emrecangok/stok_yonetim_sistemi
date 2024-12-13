@@ -102,9 +102,11 @@
       <DependentUpon>add_product_to_warehouse_form.cs</DependentUpon>
     </Compile>
     <Compile Include="classes\Admin_user.cs" />
+    <Compile Include="classes\Suppliers.cs" />
     <Compile Include="classes\Categories.cs" />
     <Compile Include="classes\current_user.cs" />
     <Compile Include="classes\Product.cs" />
+    <Compile Include="classes\sql_classes\supplier_repo.cs" />
     <Compile Include="classes\sql_classes\category_repo.cs" />
     <Compile Include="classes\sql_classes\Db_helper.cs" />
     <Compile Include="classes\sql_classes\Graphics_repo.cs" />
@@ -152,6 +154,12 @@
     </Compile>
     <Compile Include="user_management.Designer.cs">
       <DependentUpon>user_management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usr_supplier.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usr_supplier.Designer.cs">
+      <DependentUpon>usr_supplier.cs</DependentUpon>
     </Compile>
     <Compile Include="usr_category.cs">
       <SubType>UserControl</SubType>
@@ -202,6 +210,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="user_management.resx">
       <DependentUpon>user_management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usr_supplier.resx">
+      <DependentUpon>usr_supplier.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="usr_category.resx">
       <DependentUpon>usr_category.cs</DependentUpon>
