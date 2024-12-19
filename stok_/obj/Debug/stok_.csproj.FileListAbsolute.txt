@@ -181,3 +181,4 @@ C:\Users\selin\OneDrive\Desktop\proje_stok\stok_\obj\Debug\stok_.csproj.Up2Date
 C:\Users\selin\OneDrive\Desktop\proje_stok\stok_\obj\Debug\stok_.exe
 C:\Users\selin\OneDrive\Desktop\proje_stok\stok_\obj\Debug\stok_.pdb
 C:\Users\selin\OneDrive\Desktop\proje_stok\stok_\obj\Debug\stok_.usr_supplier.resources
+C:\Users\Emrecan\Desktop\stok_yonetim_sistemi\stok_\obj\Debug\stok_.usr_supplier.resources
