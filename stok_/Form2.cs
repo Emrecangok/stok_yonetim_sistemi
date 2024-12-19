@@ -105,7 +105,8 @@ namespace stok_
 
         private void stock_report_tsm_down_Click(object sender, EventArgs e)
         {
-            usr_reports usr = new usr_reports();
+            //usr_reports usr = new usr_reports();
+            usr_stock_logs usr = new usr_stock_logs();
             usrmg.add_user_control(usr, pnl_screen);
         }
 

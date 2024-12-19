@@ -149,6 +149,26 @@ namespace stok_.classes.sql_classes
 
         }
 
+        public int GetProductQuantity(int warehouseId, int productId)
+        {
+            string query = @"
+        SELECT stock_quantity
+        FROM product_warehouse
+        WHERE warehouse_id = @warehouse_id AND product_id = @product_id;
+    ";
+
+            var parameters = new NpgsqlParameter[]
+            {
+        new NpgsqlParameter("@warehouse_id", warehouseId),
+        new NpgsqlParameter("@product_id", productId)
+            };
+
+            // Veritabanından miktarı almak için ExecuteScalar kullanıyoruz
+            object result = execute_scalar(query, parameters);
+            return result != null ? Convert.ToInt32(result) : 0; // Null ise miktar 0 döner
+        }
+
+
 
 
 

@@ -16,7 +16,7 @@ namespace stok_
     public partial class usr_ware_house : UserControl
     {
         Warehouse_repo ware_repo = new Warehouse_repo("server=localHost;port=5432;" +
-           "Database=stok_yonetim_data;user Id=postgres; Password=12345");
+           "Database=stok_yonetim;user Id=postgres; Password=can12345");
         public usr_ware_house()
         {
             InitializeComponent();

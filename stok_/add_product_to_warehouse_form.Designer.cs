@@ -49,6 +49,10 @@ namespace stok_
             this.label4 = new System.Windows.Forms.Label();
             this.pie_graph = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.cmb_box_supplier = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lbl_stock_value = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.line_graph)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pie_graph)).BeginInit();
@@ -98,12 +102,13 @@ namespace stok_
             this.btn_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_add.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_add.ForeColor = System.Drawing.Color.White;
-            this.btn_add.Location = new System.Drawing.Point(90, 297);
+            this.btn_add.Location = new System.Drawing.Point(90, 322);
             this.btn_add.Name = "btn_add";
             this.btn_add.Size = new System.Drawing.Size(95, 30);
             this.btn_add.TabIndex = 29;
             this.btn_add.Text = "Depoya Ekle";
             this.btn_add.UseVisualStyleBackColor = false;
+            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
             // 
             // cmb_box_product_name
             // 
@@ -147,7 +152,7 @@ namespace stok_
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(9, 261);
+            this.label3.Location = new System.Drawing.Point(9, 286);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(81, 17);
             this.label3.TabIndex = 41;
@@ -155,7 +160,7 @@ namespace stok_
             // 
             // txt_box_product_quantity
             // 
-            this.txt_box_product_quantity.Location = new System.Drawing.Point(90, 259);
+            this.txt_box_product_quantity.Location = new System.Drawing.Point(93, 285);
             this.txt_box_product_quantity.Name = "txt_box_product_quantity";
             this.txt_box_product_quantity.Size = new System.Drawing.Size(121, 20);
             this.txt_box_product_quantity.TabIndex = 42;
@@ -216,11 +221,56 @@ namespace stok_
             this.label5.TabIndex = 45;
             this.label5.Text = "Deponun Genel Durumu";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label6.Location = new System.Drawing.Point(12, 241);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(61, 17);
+            this.label6.TabIndex = 46;
+            this.label6.Text = "Tedarikci";
+            // 
+            // cmb_box_supplier
+            // 
+            this.cmb_box_supplier.FormattingEnabled = true;
+            this.cmb_box_supplier.Location = new System.Drawing.Point(90, 240);
+            this.cmb_box_supplier.Name = "cmb_box_supplier";
+            this.cmb_box_supplier.Size = new System.Drawing.Size(121, 21);
+            this.cmb_box_supplier.TabIndex = 47;
+            this.cmb_box_supplier.SelectedIndexChanged += new System.EventHandler(this.cmb_box_supplier_SelectedIndexChanged);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label7.Location = new System.Drawing.Point(18, 367);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(224, 19);
+            this.label7.TabIndex = 48;
+            this.label7.Text = "Ürünün Depodaki Mevcut Sayısı:";
+            // 
+            // lbl_stock_value
+            // 
+            this.lbl_stock_value.AutoSize = true;
+            this.lbl_stock_value.Font = new System.Drawing.Font("Microsoft YaHei UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_stock_value.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbl_stock_value.Location = new System.Drawing.Point(83, 415);
+            this.lbl_stock_value.Name = "lbl_stock_value";
+            this.lbl_stock_value.Size = new System.Drawing.Size(71, 39);
+            this.lbl_stock_value.TabIndex = 49;
+            this.lbl_stock_value.Text = "155";
+            // 
             // add_product_to_warehouse_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(557, 522);
+            this.Controls.Add(this.lbl_stock_value);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.cmb_box_supplier);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.pie_graph);
             this.Controls.Add(this.label4);
@@ -263,5 +313,9 @@ namespace stok_
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataVisualization.Charting.Chart pie_graph;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox cmb_box_supplier;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lbl_stock_value;
     }
 }

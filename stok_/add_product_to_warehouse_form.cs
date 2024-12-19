@@ -16,11 +16,15 @@ namespace stok_
     {
 
         Warehouse_repo ware_repo = new Warehouse_repo("server=localHost;port=5432;" +
-          "Database=stok_yonetim_data;user Id=postgres; Password=12345");
+           "Database=stok_yonetim;user Id=postgres; Password=can12345");
         Products_repo pro_repo = new Products_repo("server=localHost;port=5432;" +
-          "Database=stok_yonetim_data;user Id=postgres; Password=12345");
+           "Database=stok_yonetim;user Id=postgres; Password=can12345");
         GraphicsRepo grap = new GraphicsRepo("server=localHost;port=5432;" +
-          "Database=stok_yonetim_data;user Id=postgres; Password=12345");
+           "Database=stok_yonetim;user Id=postgres; Password=can12345");
+        Supplier_repo sup_repo = new Supplier_repo("server=localHost;port=5432;" +
+           "Database=stok_yonetim;user Id=postgres; Password=can12345");
+        Stock_transaction_repo stock_transacition_repo = new Stock_transaction_repo("server=localHost;port=5432;" +
+           "Database=stok_yonetim;user Id=postgres; Password=can12345");
         public add_product_to_warehouse_form()
         {
             InitializeComponent();
@@ -60,6 +64,7 @@ namespace stok_
         {
             ware_repo._load_warehouses_into_combo_box(cmb_box_warehouse_name);
             pro_repo._load_products_into_combo_box(cmb_box_product_name);
+            sup_repo._load_suppliers_into_combo_box(cmb_box_supplier);
 
 
         }
@@ -76,6 +81,45 @@ namespace stok_
         {
             DataTable product_history = grap.get_product_history(Convert.ToInt32(cmb_box_product_name.SelectedValue));
             grap.draw_product_line_chart(line_graph, product_history);
+            int ware_house_id = Convert.ToInt32(cmb_box_warehouse_name.SelectedValue);
+            int product_id = Convert.ToInt32(cmb_box_product_name.SelectedValue);
+
+           lbl_stock_value.Text= ware_repo.GetProductQuantity(ware_house_id,product_id).ToString();
+
+        }
+
+        private void btn_add_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int ware_house_id = Convert.ToInt32(cmb_box_warehouse_name.SelectedValue);
+                int product_id = Convert.ToInt32(cmb_box_product_name.SelectedValue);
+                int supplier_id = Convert.ToInt32(cmb_box_supplier.SelectedValue);
+                int quantity = 0;
+                if (!int.TryParse(txt_box_product_quantity.Text,out quantity) || quantity <=0)
+                {
+                    MessageBox.Show("Lütfen geçerli bir miktar giriniz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+
+                }
+                stock_transacition_repo.AddStock(product_id,ware_house_id,quantity,13,supplier_id,DateTime.Now);
+                lbl_stock_value.Text = ware_repo.GetProductQuantity(ware_house_id, product_id).ToString();
+                MessageBox.Show("Stok başarıyla eklendi!", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+            
+
+
+        }
+
+        private void cmb_box_supplier_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }

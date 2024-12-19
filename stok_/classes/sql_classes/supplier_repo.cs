@@ -133,6 +133,19 @@ namespace stok_.classes.sql_classes
 
            
         }
+        // Tedarikçi adlarını veritabanından çek ve ComboBox'a ekle
+        public void _load_suppliers_into_combo_box(ComboBox combo_box)
+        {
+            string query = "SELECT supplier_id, supplier_name FROM suppliers";
+            DataTable data_table = execute_query(query); // Veritabanı sorgusunu çalıştır
+
+            combo_box.Items.Clear(); // ComboBox'u temizle
+
+            combo_box.ValueMember = "supplier_id";
+            combo_box.DisplayMember = "supplier_name";
+            combo_box.DataSource = data_table;
+        }
+
 
 
 

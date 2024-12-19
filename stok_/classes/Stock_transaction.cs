@@ -11,6 +11,7 @@ namespace stok_.classes
         public int product_id { get; set; }
         public int user_id { get; set; }
         public int quantity { get; set; }
+        public int ware_house_id { get; set;}
         public string transaction_type { get; set; }
         public DateTime TransactionDate { get; set; } = DateTime.Now;
     }

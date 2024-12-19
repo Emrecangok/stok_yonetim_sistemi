@@ -17,9 +17,9 @@ namespace stok_
 
 
         Products_repo pro_repo = new Products_repo("server=localHost;port=5432;" +
-          "Database=stok_yonetim_data;user Id=postgres; Password=12345");
+           "Database=stok_yonetim;user Id=postgres; Password=can12345");
         Categories_repo cat_repo = new Categories_repo("server=localHost;port=5432;" +
-          "Database=stok_yonetim_data;user Id=postgres; Password=12345");
+           "Database=stok_yonetim;user Id=postgres; Password=can12345");
         public usr_products_maganement()
         {
             InitializeComponent();
