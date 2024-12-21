@@ -12,11 +12,11 @@ using stok_.classes;
 
 namespace stok_
 {
-    public partial class usr_supplier : UserControl
+    public partial class usr_role : UserControl
     {
-        Supplier_repo sup_repo = new Supplier_repo("server=localHost;port=5432;" +
+        Roles_repo role_repo = new Roles_repo("server=localHost;port=5432;" +
            "Database=stok_yonetim_data;user Id=postgres; Password=12345");
-        public usr_supplier()
+        public usr_role()
         {
             InitializeComponent();
         }
@@ -41,61 +41,60 @@ namespace stok_
         private void btn_add_Click(object sender, EventArgs e)
         {
             string error_message;
-            Suppliers sup = new Suppliers();
+            Roles role = new Roles();
 
 
-            sup.supplier_name = txtbox_supplier_name.Text;
-            sup.phone = txtbox_phone.Text;
+            role.role_name = txtbox_role_name.Text;
 
 
-            if (!sup.is_valid(out error_message))
+            if (!role.is_valid(out error_message))
             {
                 MessageBox.Show(error_message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
             else
             {
-                sup_repo.add_supplier(sup);
-                sup_repo.view_suppliers(data_grid_supplier);
+                role_repo.add_role(role);
+                role_repo.view_roles(data_grid_role);
+
+
             }
 
         }
 
-        private void usr_supplier_Load(object sender, EventArgs e)
+        private void usr_role_Load(object sender, EventArgs e)
         {
-            sup_repo.view_suppliers(data_grid_supplier);
+            role_repo.view_roles(data_grid_role);
         }
 
         private void btn_update_Click(object sender, EventArgs e)
         {
-
-            sup_repo.update_selected_supplier(data_grid_supplier, txtbox_supplier_name.Text, txtbox_phone.Text);
+            role_repo.update_selected_role(data_grid_role, txtbox_role_name.Text);
         }
 
         private void btn_del_Click(object sender, EventArgs e)
         {
-            sup_repo.delete_supplier(txtbox_supplier_name.Text, txtbox_phone.Text);
-            sup_repo.delete_selected_supplier(data_grid_supplier);
+            role_repo.delete_selected_role(data_grid_role);
         }
 
-        private void data_grid_supplier_SelectionChanged(object sender, EventArgs e)
+        private void data_grid_role_SelectionChanged(object sender, EventArgs e)
         {
-            if (data_grid_supplier.SelectedRows.Count > 0)
+            if (data_grid_role.SelectedRows.Count > 0)
             {
                 // Seçilen satırı al
-                DataGridViewRow selected_row = data_grid_supplier.SelectedRows[0];
+                DataGridViewRow selected_row = data_grid_role.SelectedRows[0];
 
                 // Seçilen satırdaki verileri TextBox'lara aktar
-                txtbox_supplier_name.Text = selected_row.Cells["supplier_name"].Value.ToString();
+                txtbox_role_name.Text = selected_row.Cells["role_name"].Value.ToString();
 
             }
         }
 
         private void btn_clear_Click(object sender, EventArgs e)
         {
-            txtbox_supplier_name.Text = string.Empty;
-            txtbox_phone.Text = string.Empty;
+            txtbox_role_name.Text = string.Empty;
         }
     }
 }
+
 

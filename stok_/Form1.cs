@@ -42,7 +42,7 @@ namespace stok_
                         name = row["user_name"].ToString(),
                         //email = row["email"].ToString(),
                         password = row["password"].ToString(),
-                        role = row["rol_id"].ToString()
+                        role_id = Convert.ToInt32(row["role_id"])
                     };
 
                     // current_user sınıfına atama yap
@@ -76,6 +76,11 @@ namespace stok_
         }
 
         private void pnl_login_page_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }

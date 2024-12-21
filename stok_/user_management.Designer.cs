@@ -34,7 +34,7 @@ namespace stok_
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.cmbbox_role = new System.Windows.Forms.ComboBox();
+            this.cmbbox_role_id = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtbox_password = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -45,6 +45,10 @@ namespace stok_
             this.btn_del = new System.Windows.Forms.Button();
             this.btn_update = new System.Windows.Forms.Button();
             this.btn_giris = new System.Windows.Forms.Button();
+            this.user_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.user_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.user_surname = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.role_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -52,10 +56,18 @@ namespace stok_
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.user_id,
+            this.user_name,
+            this.user_surname,
+            this.role_id});
             this.dataGridView1.Location = new System.Drawing.Point(45, 50);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(973, 223);
             this.dataGridView1.TabIndex = 0;
@@ -66,10 +78,11 @@ namespace stok_
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Location = new System.Drawing.Point(143, 4);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1052, 289);
             this.panel1.TabIndex = 2;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label1
             // 
@@ -87,7 +100,7 @@ namespace stok_
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.cmbbox_role);
+            this.panel2.Controls.Add(this.cmbbox_role_id);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.txtbox_password);
             this.panel2.Controls.Add(this.label3);
@@ -99,7 +112,7 @@ namespace stok_
             this.panel2.Controls.Add(this.btn_update);
             this.panel2.Controls.Add(this.btn_giris);
             this.panel2.Location = new System.Drawing.Point(143, 353);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1052, 233);
             this.panel2.TabIndex = 3;
@@ -115,17 +128,17 @@ namespace stok_
             this.label5.TabIndex = 17;
             this.label5.Text = "Rol";
             // 
-            // cmbbox_role
+            // cmbbox_role_id
             // 
-            this.cmbbox_role.FormattingEnabled = true;
-            this.cmbbox_role.Items.AddRange(new object[] {
-            "Admin",
-            "Normal"});
-            this.cmbbox_role.Location = new System.Drawing.Point(535, 87);
-            this.cmbbox_role.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.cmbbox_role.Name = "cmbbox_role";
-            this.cmbbox_role.Size = new System.Drawing.Size(196, 24);
-            this.cmbbox_role.TabIndex = 16;
+            this.cmbbox_role_id.FormattingEnabled = true;
+            this.cmbbox_role_id.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.cmbbox_role_id.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbbox_role_id.Location = new System.Drawing.Point(535, 87);
+            this.cmbbox_role_id.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbbox_role_id.Name = "cmbbox_role";
+            this.cmbbox_role_id.Size = new System.Drawing.Size(196, 24);
+            this.cmbbox_role_id.TabIndex = 16;
+            this.cmbbox_role_id.SelectedIndexChanged += new System.EventHandler(this.cmbbox_role_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -141,7 +154,7 @@ namespace stok_
             // txtbox_password
             // 
             this.txtbox_password.Location = new System.Drawing.Point(535, 36);
-            this.txtbox_password.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtbox_password.Margin = new System.Windows.Forms.Padding(4);
             this.txtbox_password.Name = "txtbox_password";
             this.txtbox_password.Size = new System.Drawing.Size(196, 22);
             this.txtbox_password.TabIndex = 14;
@@ -161,7 +174,7 @@ namespace stok_
             // txt_box_surname
             // 
             this.txt_box_surname.Location = new System.Drawing.Point(133, 86);
-            this.txt_box_surname.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_box_surname.Margin = new System.Windows.Forms.Padding(4);
             this.txt_box_surname.Name = "txt_box_surname";
             this.txt_box_surname.Size = new System.Drawing.Size(196, 22);
             this.txt_box_surname.TabIndex = 12;
@@ -180,7 +193,7 @@ namespace stok_
             // txtbox_user_name
             // 
             this.txtbox_user_name.Location = new System.Drawing.Point(133, 36);
-            this.txtbox_user_name.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtbox_user_name.Margin = new System.Windows.Forms.Padding(4);
             this.txtbox_user_name.Name = "txtbox_user_name";
             this.txtbox_user_name.Size = new System.Drawing.Size(196, 22);
             this.txtbox_user_name.TabIndex = 10;
@@ -193,12 +206,13 @@ namespace stok_
             this.btn_clear.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_clear.ForeColor = System.Drawing.Color.White;
             this.btn_clear.Location = new System.Drawing.Point(785, 185);
-            this.btn_clear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_clear.Margin = new System.Windows.Forms.Padding(4);
             this.btn_clear.Name = "btn_clear";
             this.btn_clear.Size = new System.Drawing.Size(171, 44);
             this.btn_clear.TabIndex = 9;
             this.btn_clear.Text = "Temizle";
             this.btn_clear.UseVisualStyleBackColor = false;
+            this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
             // 
             // btn_del
             // 
@@ -208,12 +222,13 @@ namespace stok_
             this.btn_del.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_del.ForeColor = System.Drawing.Color.White;
             this.btn_del.Location = new System.Drawing.Point(587, 185);
-            this.btn_del.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_del.Margin = new System.Windows.Forms.Padding(4);
             this.btn_del.Name = "btn_del";
             this.btn_del.Size = new System.Drawing.Size(171, 44);
             this.btn_del.TabIndex = 8;
             this.btn_del.Text = "Sil";
             this.btn_del.UseVisualStyleBackColor = false;
+            this.btn_del.Click += new System.EventHandler(this.btn_del_Click);
             // 
             // btn_update
             // 
@@ -223,7 +238,7 @@ namespace stok_
             this.btn_update.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_update.ForeColor = System.Drawing.Color.White;
             this.btn_update.Location = new System.Drawing.Point(363, 185);
-            this.btn_update.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_update.Margin = new System.Windows.Forms.Padding(4);
             this.btn_update.Name = "btn_update";
             this.btn_update.Size = new System.Drawing.Size(171, 44);
             this.btn_update.TabIndex = 7;
@@ -239,7 +254,7 @@ namespace stok_
             this.btn_giris.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_giris.ForeColor = System.Drawing.Color.White;
             this.btn_giris.Location = new System.Drawing.Point(156, 185);
-            this.btn_giris.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_giris.Margin = new System.Windows.Forms.Padding(4);
             this.btn_giris.Name = "btn_giris";
             this.btn_giris.Size = new System.Drawing.Size(175, 44);
             this.btn_giris.TabIndex = 6;
@@ -247,13 +262,41 @@ namespace stok_
             this.btn_giris.UseVisualStyleBackColor = false;
             this.btn_giris.Click += new System.EventHandler(this.btn_giris_Click);
             // 
+            // user_id
+            // 
+            this.user_id.HeaderText = "İD";
+            this.user_id.Name = "user_id";
+            this.user_id.ReadOnly = true;
+            this.user_id.Width = 120;
+            // 
+            // user_name
+            // 
+            this.user_name.HeaderText = "Name";
+            this.user_name.Name = "user_name";
+            this.user_name.ReadOnly = true;
+            this.user_name.Width = 120;
+            // 
+            // user_surname
+            // 
+            this.user_surname.HeaderText = "Surname";
+            this.user_surname.Name = "user_surname";
+            this.user_surname.ReadOnly = true;
+            this.user_surname.Width = 120;
+            // 
+            // role_id
+            // 
+            this.role_id.HeaderText = "Rol";
+            this.role_id.Name = "role_id";
+            this.role_id.ReadOnly = true;
+            this.role_id.Width = 120;
+            // 
             // usr_user_management
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "usr_user_management";
             this.Size = new System.Drawing.Size(1336, 610);
             this.Load += new System.EventHandler(this.usr_user_management_Load);
@@ -277,12 +320,16 @@ namespace stok_
         private System.Windows.Forms.Button btn_del;
         private System.Windows.Forms.Button btn_update;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox cmbbox_role;
+        private System.Windows.Forms.ComboBox cmbbox_role_id;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtbox_password;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txt_box_surname;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtbox_user_name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn user_id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn user_name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn user_surname;
+        private System.Windows.Forms.DataGridViewTextBoxColumn role_id;
     }
 }

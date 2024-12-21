@@ -50,12 +50,13 @@ namespace stok_
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(731, 587);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pnl_login_page
             // 
@@ -71,7 +72,7 @@ namespace stok_
             this.pnl_login_page.Controls.Add(this.lbl_exit);
             this.pnl_login_page.Dock = System.Windows.Forms.DockStyle.Right;
             this.pnl_login_page.Location = new System.Drawing.Point(727, 0);
-            this.pnl_login_page.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnl_login_page.Margin = new System.Windows.Forms.Padding(4);
             this.pnl_login_page.Name = "pnl_login_page";
             this.pnl_login_page.Size = new System.Drawing.Size(561, 587);
             this.pnl_login_page.TabIndex = 1;
@@ -81,7 +82,7 @@ namespace stok_
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(142)))), ((int)(((byte)(73)))));
             this.panel2.Location = new System.Drawing.Point(113, 375);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(368, 6);
             this.panel2.TabIndex = 12;
@@ -91,7 +92,7 @@ namespace stok_
             this.txtbox_sifre.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtbox_sifre.Font = new System.Drawing.Font("Malgun Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbox_sifre.Location = new System.Drawing.Point(113, 334);
-            this.txtbox_sifre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtbox_sifre.Margin = new System.Windows.Forms.Padding(4);
             this.txtbox_sifre.Multiline = true;
             this.txtbox_sifre.Name = "txtbox_sifre";
             this.txtbox_sifre.Size = new System.Drawing.Size(368, 44);
@@ -103,7 +104,7 @@ namespace stok_
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(142)))), ((int)(((byte)(73)))));
             this.panel1.Location = new System.Drawing.Point(113, 304);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(368, 6);
             this.panel1.TabIndex = 10;
@@ -128,7 +129,7 @@ namespace stok_
             this.btn_giris.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_giris.ForeColor = System.Drawing.Color.White;
             this.btn_giris.Location = new System.Drawing.Point(113, 462);
-            this.btn_giris.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_giris.Margin = new System.Windows.Forms.Padding(4);
             this.btn_giris.Name = "btn_giris";
             this.btn_giris.Size = new System.Drawing.Size(368, 53);
             this.btn_giris.TabIndex = 5;
@@ -141,7 +142,7 @@ namespace stok_
             this.txtbox_kullanici_adi.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtbox_kullanici_adi.Font = new System.Drawing.Font("Malgun Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbox_kullanici_adi.Location = new System.Drawing.Point(113, 262);
-            this.txtbox_kullanici_adi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtbox_kullanici_adi.Margin = new System.Windows.Forms.Padding(4);
             this.txtbox_kullanici_adi.Multiline = true;
             this.txtbox_kullanici_adi.Name = "txtbox_kullanici_adi";
             this.txtbox_kullanici_adi.Size = new System.Drawing.Size(368, 44);
@@ -189,7 +190,7 @@ namespace stok_
             this.Controls.Add(this.pnl_login_page);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "main_form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";

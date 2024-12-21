@@ -6,9 +6,10 @@ namespace stok_.classes
     {
         public static int id { get; private set; }
         public static string name { get; private set; }
-        public static string email { get; private set; }
+        public static string surname { get; private set; }
+        //public static string email { get; private set; }
         public static string password { get; private set; }
-        public static string role { get; private set; }
+        public static int role_id { get; private set; }
 
         // Kullanıcı bilgilerini ayarlamak için bir metod
         public static void set_user(User user)
@@ -17,9 +18,11 @@ namespace stok_.classes
             {
                 id = user.id;
                 name = user.name;
-                email = user.email;
+                surname = user.surname;
+                //email = user.email;
                 password = user.password;
-                role = user.role;
+                //role = user.role;
+                role_id = user.role_id;
             }
         }
 
@@ -28,9 +31,10 @@ namespace stok_.classes
         {
             id = 0;
             name = null;
-            email = null;
+            surname = null;
+            //email = null;
             password = null;
-            role = null;
+            role_id = 0;
         }
     }
 }

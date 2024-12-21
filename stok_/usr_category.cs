@@ -15,7 +15,7 @@ namespace stok_
     public partial class usr_category : UserControl
     {
         Categories_repo cat_repo = new Categories_repo("server=localHost;port=5432;" +
-           "Database=stok_yonetim;user Id=postgres; Password=can12345");
+           "Database=stok_yonetim_data;user Id=postgres; Password=12345");
         public usr_category()
         {
             InitializeComponent();
@@ -28,7 +28,7 @@ namespace stok_
         {
             usr_products_maganement usr = new usr_products_maganement();
             //usrmg.add_user_control(usr);
-            //usrmg.add_user_control(usr,);
+            //usrmg.add_user_control(usr);
 
 
         }

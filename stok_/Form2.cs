@@ -169,5 +169,12 @@ namespace stok_
         {
 
         }
+
+
+        private void kullanıcıCRUDToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            usr_user_management usr = new usr_user_management();
+            usrmg.add_user_control(usr, pnl_screen);
+        }
     }
 }
