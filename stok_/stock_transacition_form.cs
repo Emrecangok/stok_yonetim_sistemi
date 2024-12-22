@@ -27,7 +27,7 @@ namespace stok_
            "Database=stok_yonetim;user Id=postgres; Password=can12345");
         Supplier_repo sup_repo = new Supplier_repo("server=localHost;port=5432;" +
            "Database=stok_yonetim;user Id=postgres; Password=can12345");
-        Stock_transaction_repo stock_transacition_repo = new Stock_transaction_repo("server=localHost;port=5432;" +
+        StockTransactionRepo stock_transacition_repo = new StockTransactionRepo("server=localHost;port=5432;" +
            "Database=stok_yonetim;user Id=postgres; Password=can12345");
         private void lbl_exit_Click(object sender, EventArgs e)
         {

@@ -150,5 +150,50 @@ namespace stok_.classes.sql_classes
 
 
         }
+        public void view_low_stock_products(DataGridView gridView)
+        {
+            gridView.Rows.Clear();
+
+            string query = @"
+                SELECT 
+                    p.product_id, 
+                    p.product_name, 
+                    c.category_name, 
+                    p.unit_price, 
+                    p.min_stock_level, 
+                    COALESCE(SUM(pw.quantity), 0) AS current_stock
+                FROM products AS p
+                LEFT JOIN categories AS c ON p.category_id = c.category_id
+                LEFT JOIN product_warehouse AS pw ON p.product_id = pw.product_id
+                GROUP BY p.product_id, c.category_name, p.unit_price, p.min_stock_level
+                HAVING COALESCE(SUM(pw.quantity), 0) < p.min_stock_level";
+
+            try
+            {
+                gridView.AutoGenerateColumns = false;
+
+                var dataTable = execute_query(query);
+
+                if (gridView.Columns.Count == 0)
+                {
+                    gridView.Columns.Add("product_id", "Ürün ID");
+                    gridView.Columns.Add("product_name", "Ürün Adı");
+                    gridView.Columns.Add("category_name", "Kategori Adı");
+                    gridView.Columns.Add("unit_price", "Birim Fiyat");
+                    gridView.Columns.Add("min_stock_level", "Minimum Stok Seviyesi");
+                    gridView.Columns.Add("current_stock", "Mevcut Stok");
+                }
+
+                foreach (DataRow row in dataTable.Rows)
+                {
+                    gridView.Rows.Add(row["product_id"], row["product_name"], row["category_name"],
+                                      row["unit_price"], row["min_stock_level"], row["current_stock"]);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Düşük stoklu ürünleri listelerken bir hata oluştu: \n{ex.Message}", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

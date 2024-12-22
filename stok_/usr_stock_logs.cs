@@ -14,7 +14,7 @@ namespace stok_
     public partial class usr_stock_logs : UserControl
     {
 
-        Stock_transaction_repo stock_transacition_repo = new Stock_transaction_repo("server=localHost;port=5432;" +
+        StockTransactionRepo stock_transacition_repo = new StockTransactionRepo("server=localHost;port=5432;" +
           "Database=stok_yonetim;user Id=postgres; Password=can12345");
         public usr_stock_logs()
         {

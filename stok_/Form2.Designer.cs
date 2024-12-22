@@ -49,10 +49,8 @@ namespace stok_
             this.roles_tsm_down = new System.Windows.Forms.ToolStripMenuItem();
             this.repot_mg_tsm = new System.Windows.Forms.ToolStripMenuItem();
             this.stock_report_tsm_down = new System.Windows.Forms.ToolStripMenuItem();
-            this.sales_report_tsm_down = new System.Windows.Forms.ToolStripMenuItem();
             this.warehouse_mg_tsm = new System.Windows.Forms.ToolStripMenuItem();
             this.ware_house_tsm_down = new System.Windows.Forms.ToolStripMenuItem();
-            this.p_ware_house_tsm_down = new System.Windows.Forms.ToolStripMenuItem();
             this.supplier_mg_tsm = new System.Windows.Forms.ToolStripMenuItem();
             this.tedarikçilerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tedarikçiCRUDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -105,7 +103,7 @@ namespace stok_
             this.menu_strip_main.Location = new System.Drawing.Point(0, 0);
             this.menu_strip_main.Name = "menu_strip_main";
             this.menu_strip_main.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menu_strip_main.Size = new System.Drawing.Size(1087, 33);
+            this.menu_strip_main.Size = new System.Drawing.Size(967, 33);
             this.menu_strip_main.TabIndex = 3;
             this.menu_strip_main.Text = "menuStrip1";
             this.menu_strip_main.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked_1);
@@ -190,6 +188,7 @@ namespace stok_
             this.usr_remove_product.Name = "usr_remove_product";
             this.usr_remove_product.Size = new System.Drawing.Size(260, 30);
             this.usr_remove_product.Text = "Depodan Stok Çıkar";
+            this.usr_remove_product.Click += new System.EventHandler(this.usr_remove_product_Click);
             // 
             // category_tsm_down
             // 
@@ -233,8 +232,7 @@ namespace stok_
             // repot_mg_tsm
             // 
             this.repot_mg_tsm.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.stock_report_tsm_down,
-            this.sales_report_tsm_down});
+            this.stock_report_tsm_down});
             this.repot_mg_tsm.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.repot_mg_tsm.ForeColor = System.Drawing.Color.White;
             this.repot_mg_tsm.Image = ((System.Drawing.Image)(resources.GetObject("repot_mg_tsm.Image")));
@@ -248,23 +246,14 @@ namespace stok_
             this.stock_report_tsm_down.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
             this.stock_report_tsm_down.ForeColor = System.Drawing.Color.White;
             this.stock_report_tsm_down.Name = "stock_report_tsm_down";
-            this.stock_report_tsm_down.Size = new System.Drawing.Size(205, 30);
+            this.stock_report_tsm_down.Size = new System.Drawing.Size(201, 30);
             this.stock_report_tsm_down.Text = "Stok Raporları";
             this.stock_report_tsm_down.Click += new System.EventHandler(this.stock_report_tsm_down_Click);
-            // 
-            // sales_report_tsm_down
-            // 
-            this.sales_report_tsm_down.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
-            this.sales_report_tsm_down.ForeColor = System.Drawing.Color.White;
-            this.sales_report_tsm_down.Name = "sales_report_tsm_down";
-            this.sales_report_tsm_down.Size = new System.Drawing.Size(205, 30);
-            this.sales_report_tsm_down.Text = "Satış Raporları";
             // 
             // warehouse_mg_tsm
             // 
             this.warehouse_mg_tsm.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ware_house_tsm_down,
-            this.p_ware_house_tsm_down});
+            this.ware_house_tsm_down});
             this.warehouse_mg_tsm.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.warehouse_mg_tsm.ForeColor = System.Drawing.Color.White;
             this.warehouse_mg_tsm.Image = global::stok_.Properties.Resources.parcel;
@@ -278,17 +267,9 @@ namespace stok_
             this.ware_house_tsm_down.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
             this.ware_house_tsm_down.ForeColor = System.Drawing.Color.White;
             this.ware_house_tsm_down.Name = "ware_house_tsm_down";
-            this.ware_house_tsm_down.Size = new System.Drawing.Size(234, 30);
+            this.ware_house_tsm_down.Size = new System.Drawing.Size(180, 30);
             this.ware_house_tsm_down.Text = "Depolar";
             this.ware_house_tsm_down.Click += new System.EventHandler(this.ware_house_tsm_down_Click);
-            // 
-            // p_ware_house_tsm_down
-            // 
-            this.p_ware_house_tsm_down.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
-            this.p_ware_house_tsm_down.ForeColor = System.Drawing.Color.White;
-            this.p_ware_house_tsm_down.Name = "p_ware_house_tsm_down";
-            this.p_ware_house_tsm_down.Size = new System.Drawing.Size(234, 30);
-            this.p_ware_house_tsm_down.Text = "Ürün-Depo İlişkisi";
             // 
             // supplier_mg_tsm
             // 
@@ -356,10 +337,8 @@ namespace stok_
         private System.Windows.Forms.ToolStripMenuItem user_actions_tsm_down;
         private System.Windows.Forms.ToolStripMenuItem roles_tsm_down;
         private System.Windows.Forms.ToolStripMenuItem stock_report_tsm_down;
-        private System.Windows.Forms.ToolStripMenuItem sales_report_tsm_down;
         private System.Windows.Forms.ToolStripMenuItem warehouse_mg_tsm;
         private System.Windows.Forms.ToolStripMenuItem ware_house_tsm_down;
-        private System.Windows.Forms.ToolStripMenuItem p_ware_house_tsm_down;
         private System.Windows.Forms.ToolStripMenuItem products_tsp_add_down;
         private System.Windows.Forms.ToolStripMenuItem inter_warehouse_transfer_tsm;
         private System.Windows.Forms.ToolStripMenuItem ad_product_tsm_down;

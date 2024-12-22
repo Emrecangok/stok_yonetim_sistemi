@@ -45,7 +45,7 @@ namespace stok_
             this.label10 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.lbl_sales = new System.Windows.Forms.Label();
+            this.lbl_removed = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -107,19 +107,19 @@ namespace stok_
             this.lbl_new_users.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lbl_new_users.Location = new System.Drawing.Point(183, 61);
             this.lbl_new_users.Name = "lbl_new_users";
-            this.lbl_new_users.Size = new System.Drawing.Size(15, 16);
+            this.lbl_new_users.Size = new System.Drawing.Size(14, 16);
             this.lbl_new_users.TabIndex = 2;
-            this.lbl_new_users.Text = "2";
+            this.lbl_new_users.Text = "x";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label14.Location = new System.Drawing.Point(73, 16);
+            this.label14.Location = new System.Drawing.Point(78, 16);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(112, 20);
+            this.label14.Size = new System.Drawing.Size(137, 20);
             this.label14.TabIndex = 1;
-            this.label14.Text = "Yeni Kullanıcılar";
+            this.label14.Text = "Bugunki Transferler";
             // 
             // pictureBox6
             // 
@@ -161,9 +161,9 @@ namespace stok_
             this.lbl_low_stock.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lbl_low_stock.Location = new System.Drawing.Point(181, 60);
             this.lbl_low_stock.Name = "lbl_low_stock";
-            this.lbl_low_stock.Size = new System.Drawing.Size(15, 16);
+            this.lbl_low_stock.Size = new System.Drawing.Size(14, 16);
             this.lbl_low_stock.TabIndex = 2;
-            this.lbl_low_stock.Text = "8";
+            this.lbl_low_stock.Text = "x";
             // 
             // pictureBox5
             // 
@@ -175,6 +175,7 @@ namespace stok_
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox5.TabIndex = 0;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // panel7
             // 
@@ -224,7 +225,7 @@ namespace stok_
             // 
             this.panel6.BackColor = System.Drawing.Color.White;
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Controls.Add(this.lbl_sales);
+            this.panel6.Controls.Add(this.lbl_removed);
             this.panel6.Controls.Add(this.label8);
             this.panel6.Controls.Add(this.pictureBox3);
             this.panel6.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -233,25 +234,26 @@ namespace stok_
             this.panel6.Size = new System.Drawing.Size(213, 88);
             this.panel6.TabIndex = 13;
             // 
-            // lbl_sales
+            // lbl_removed
             // 
-            this.lbl_sales.AutoSize = true;
-            this.lbl_sales.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_sales.Location = new System.Drawing.Point(172, 60);
-            this.lbl_sales.Name = "lbl_sales";
-            this.lbl_sales.Size = new System.Drawing.Size(36, 16);
-            this.lbl_sales.TabIndex = 2;
-            this.lbl_sales.Text = "2328";
+            this.lbl_removed.AutoSize = true;
+            this.lbl_removed.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_removed.Location = new System.Drawing.Point(172, 60);
+            this.lbl_removed.Name = "lbl_removed";
+            this.lbl_removed.Size = new System.Drawing.Size(14, 16);
+            this.lbl_removed.TabIndex = 2;
+            this.lbl_removed.Text = "x";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label8.Location = new System.Drawing.Point(73, 16);
+            this.label8.Location = new System.Drawing.Point(98, 16);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(109, 20);
+            this.label8.Size = new System.Drawing.Size(114, 20);
             this.label8.TabIndex = 1;
-            this.label8.Text = "Toplam Satışlar";
+            this.label8.Text = "Çıkarılan Stoklar";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // pictureBox3
             // 
@@ -283,9 +285,9 @@ namespace stok_
             this.lbl_tedarik.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lbl_tedarik.Location = new System.Drawing.Point(172, 60);
             this.lbl_tedarik.Name = "lbl_tedarik";
-            this.lbl_tedarik.Size = new System.Drawing.Size(22, 16);
+            this.lbl_tedarik.Size = new System.Drawing.Size(14, 16);
             this.lbl_tedarik.TabIndex = 2;
-            this.lbl_tedarik.Text = "12";
+            this.lbl_tedarik.Text = "x";
             // 
             // label6
             // 
@@ -327,19 +329,19 @@ namespace stok_
             this.lbl_stock.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lbl_stock.Location = new System.Drawing.Point(172, 60);
             this.lbl_stock.Name = "lbl_stock";
-            this.lbl_stock.Size = new System.Drawing.Size(29, 16);
+            this.lbl_stock.Size = new System.Drawing.Size(14, 16);
             this.lbl_stock.TabIndex = 2;
-            this.lbl_stock.Text = "235";
+            this.lbl_stock.Text = "x";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(73, 16);
+            this.label4.Location = new System.Drawing.Point(69, 13);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(92, 20);
+            this.label4.Size = new System.Drawing.Size(143, 20);
             this.label4.TabIndex = 1;
-            this.label4.Text = "Toplam Stok";
+            this.label4.Text = "Bugun Eklenen Stok";
             // 
             // pictureBox1
             // 
@@ -407,7 +409,7 @@ namespace stok_
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label lbl_sales;
+        private System.Windows.Forms.Label lbl_removed;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel4;

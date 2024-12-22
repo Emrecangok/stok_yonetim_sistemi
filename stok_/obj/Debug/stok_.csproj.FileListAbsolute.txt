@@ -183,3 +183,5 @@ C:\Users\selin\OneDrive\Desktop\proje_stok\stok_\obj\Debug\stok_.pdb
 C:\Users\selin\OneDrive\Desktop\proje_stok\stok_\obj\Debug\stok_.usr_supplier.resources
 C:\Users\Emrecan\Desktop\stok_yonetim_sistemi\stok_\obj\Debug\stok_.usr_supplier.resources
 C:\Users\Emrecan\Desktop\stok_yonetim_sistemi\stok_\obj\Debug\stok_.usr_stock_logs.resources
+C:\Users\Emrecan\Desktop\stok_yonetim_sistemi\stok_\obj\Debug\stok_.remove_product_form.resources
+C:\Users\Emrecan\Desktop\stok_yonetim_sistemi\stok_\obj\Debug\stok_.low_stock_form.resources

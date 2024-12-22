@@ -169,5 +169,12 @@ namespace stok_
         {
 
         }
+
+        private void usr_remove_product_Click(object sender, EventArgs e)
+        {
+            remove_product_form frm = new remove_product_form();
+            frm.Show();
+            
+        }
     }
 }
