@@ -15,7 +15,7 @@ namespace stok_
     {
 
         StockTransactionRepo stock_transacition_repo = new StockTransactionRepo("server=localHost;port=5432;" +
-          "Database=stok_yonetim;user Id=postgres; Password=can12345");
+          "Database=data_son;user Id=postgres; Password=12345");
         public usr_stock_logs()
         {
             InitializeComponent();

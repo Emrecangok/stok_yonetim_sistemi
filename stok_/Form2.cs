@@ -98,8 +98,8 @@ namespace stok_
 
         private void user_actions_tsm_down_Click(object sender, EventArgs e)
         {
-            usr_user_management usr = new usr_user_management();
-            usrmg.add_user_control(usr,pnl_screen);
+            // usr_user_management usr = new usr_user_management();
+            //usrmg.add_user_control(usr,pnl_screen);
             
         }
 
@@ -175,6 +175,20 @@ namespace stok_
             remove_product_form frm = new remove_product_form();
             frm.Show();
             
+        }
+
+
+
+        private void kullanıcıCRUDToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            usr_user_management usr = new usr_user_management();
+            usrmg.add_user_control(usr, pnl_screen);
+        }
+
+        private void roles_tsm_down_Click(object sender, EventArgs e)
+        {
+            usr_role usr = new usr_role();
+            usrmg.add_user_control(usr, pnl_screen);
         }
     }
 }

@@ -12,11 +12,11 @@ using stok_.classes;
 
 namespace stok_
 {
-    public partial class usr_category : UserControl
+    public partial class usr_role : UserControl
     {
-        Categories_repo cat_repo = new Categories_repo("server=localHost;port=5432;" +
+        Roles_repo role_repo = new Roles_repo("server=localHost;port=5432;" +
            "Database=data_son;user Id=postgres; Password=12345");
-        public usr_category()
+        public usr_role()
         {
             InitializeComponent();
         }
@@ -28,7 +28,7 @@ namespace stok_
         {
             usr_products_maganement usr = new usr_products_maganement();
             //usrmg.add_user_control(usr);
-            //usrmg.add_user_control(usr,);
+            //usrmg.add_user_control(usr);
 
 
         }
@@ -41,53 +41,58 @@ namespace stok_
         private void btn_add_Click(object sender, EventArgs e)
         {
             string error_message;
-            Categories cat = new Categories();
+            Roles role = new Roles();
 
 
-            cat.category_name = txtbox_category_name.Text;
+            role.role_name = txtbox_role_name.Text;
 
 
-            if (!cat.is_valid(out error_message))
+            if (!role.is_valid(out error_message))
             {
                 MessageBox.Show(error_message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
             else
             {
-                cat_repo.add_category(cat);
-                cat_repo.view_categories(data_grid_category);
+                role_repo.add_role(role);
+                role_repo.view_roles(data_grid_role);
 
 
             }
 
         }
 
-        private void usr_category_Load(object sender, EventArgs e)
+        private void usr_role_Load(object sender, EventArgs e)
         {
-            cat_repo.view_categories(data_grid_category);
+            role_repo.view_roles(data_grid_role);
         }
 
         private void btn_update_Click(object sender, EventArgs e)
         {
-            cat_repo.update_selected_category(data_grid_category, txtbox_category_name.Text);
+            role_repo.update_selected_role(data_grid_role, txtbox_role_name.Text);
         }
 
         private void btn_del_Click(object sender, EventArgs e)
         {
-            cat_repo.delete_selected_category(data_grid_category);
+            role_repo.delete_selected_role(data_grid_role);
         }
 
-        private void data_grid_category_SelectionChanged(object sender, EventArgs e)
+        private void data_grid_role_SelectionChanged(object sender, EventArgs e)
         {
-            if (data_grid_category.SelectedRows.Count > 0)
+            if (data_grid_role.SelectedRows.Count > 0)
             {
                 // Seçilen satırı al
-                DataGridViewRow selected_row = data_grid_category.SelectedRows[0];
+                DataGridViewRow selected_row = data_grid_role.SelectedRows[0];
 
                 // Seçilen satırdaki verileri TextBox'lara aktar
-                txtbox_category_name.Text = selected_row.Cells["category_name"].Value.ToString();
+                txtbox_role_name.Text = selected_row.Cells["role_name"].Value.ToString();
 
             }
+        }
+
+        private void btn_clear_Click(object sender, EventArgs e)
+        {
+            txtbox_role_name.Text = string.Empty;
         }
     }
 }

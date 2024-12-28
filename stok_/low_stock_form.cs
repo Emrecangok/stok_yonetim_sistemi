@@ -18,7 +18,7 @@ namespace stok_
             InitializeComponent();
         }
         main_repo repo = new main_repo("server=localHost;port=5432;" +
-            "Database=stok_yonetim;user Id=postgres; Password=can12345");
+            "Database=data_son;user Id=postgres; Password=12345");
         private void low_stock_form_Load(object sender, EventArgs e)
         {
             repo.view_low_stock_products(dataGridView1);

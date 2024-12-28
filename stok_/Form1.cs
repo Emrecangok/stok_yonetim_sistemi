@@ -14,7 +14,7 @@ namespace stok_
         }
 
         NpgsqlConnection con = new NpgsqlConnection("server=localHost;port=5432;" +
-            "Database=stok_yonetim;user Id=postgres; Password=can12345");
+            "Database=data_son;user Id=postgres; Password=12345");
 
         private void btn_giris_Click(object sender, EventArgs e)
         {
@@ -42,7 +42,7 @@ namespace stok_
                         name = row["user_name"].ToString(),
                         //email = row["email"].ToString(),
                         password = row["password"].ToString(),
-                        role = row["rol_id"].ToString()
+                        role_id = Convert.ToInt32(row["role_id"])
                     };
 
                     // current_user sınıfına atama yap

@@ -102,7 +102,10 @@
       <DependentUpon>add_product_to_warehouse_form.cs</DependentUpon>
     </Compile>
     <Compile Include="classes\Admin_user.cs" />
+    <Compile Include="classes\Roles.cs" />
     <Compile Include="classes\sql_classes\main_repo.cs" />
+    <Compile Include="classes\sql_classes\role_repo.cs" />
+    <Compile Include="classes\sql_classes\User_repo.cs" />
     <Compile Include="classes\Suppliers.cs" />
     <Compile Include="classes\Categories.cs" />
     <Compile Include="classes\current_user.cs" />
@@ -167,6 +170,12 @@
     </Compile>
     <Compile Include="user_management.Designer.cs">
       <DependentUpon>user_management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usr_role.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usr_role.Designer.cs">
+      <DependentUpon>usr_role.cs</DependentUpon>
     </Compile>
     <Compile Include="usr_stock_logs.cs">
       <SubType>UserControl</SubType>
@@ -235,6 +244,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="user_management.resx">
       <DependentUpon>user_management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usr_role.resx">
+      <DependentUpon>usr_role.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="usr_stock_logs.resx">
       <DependentUpon>usr_stock_logs.cs</DependentUpon>

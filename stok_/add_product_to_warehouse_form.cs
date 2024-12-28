@@ -16,15 +16,15 @@ namespace stok_
     {
 
         Warehouse_repo ware_repo = new Warehouse_repo("server=localHost;port=5432;" +
-           "Database=stok_yonetim;user Id=postgres; Password=can12345");
+           "Database=data_son;user Id=postgres; Password=12345");
         Products_repo pro_repo = new Products_repo("server=localHost;port=5432;" +
-           "Database=stok_yonetim;user Id=postgres; Password=can12345");
+           "Database=data_son;user Id=postgres; Password=12345");
         GraphicsRepo grap = new GraphicsRepo("server=localHost;port=5432;" +
-           "Database=stok_yonetim;user Id=postgres; Password=can12345");
+           "Database=data_son;user Id=postgres; Password=12345");
         Supplier_repo sup_repo = new Supplier_repo("server=localHost;port=5432;" +
-           "Database=stok_yonetim;user Id=postgres; Password=can12345");
+           "Database=dat_son;user Id=postgres; Password=12345");
         StockTransactionRepo stock_transacition_repo = new StockTransactionRepo("server=localHost;port=5432;" +
-           "Database=stok_yonetim;user Id=postgres; Password=can12345");
+           "Database=dat_son;user Id=postgres; Password=12345");
         public add_product_to_warehouse_form()
         {
             InitializeComponent();

@@ -1,182 +1,242 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\",
+  "WorkspaceRootPath": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|c:\\users\\selin\\onedrive\\desktop\\proje_stok\\stok_\\usr_supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:usr_supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|c:\\users\\selin\\onedrive\\desktop\\proje_stok\\stok_\\usr_supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:usr_supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|c:\\users\\selin\\onedrive\\desktop\\proje_stok\\stok_\\classes\\sql_classes\\supplier_repo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:classes\\sql_classes\\supplier_repo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|c:\\users\\selin\\onedrive\\desktop\\proje_stok\\stok_\\usr_supplier.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:usr_supplier.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|c:\\users\\selin\\onedrive\\desktop\\proje_stok\\stok_\\classes\\sql_classes\\products_repo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:classes\\sql_classes\\products_repo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|c:\\users\\selin\\onedrive\\desktop\\proje_stok\\stok_\\products_management.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:products_management.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|c:\\users\\selin\\onedrive\\desktop\\proje_stok\\stok_\\usr_supplier.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
-      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:usr_supplier.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|c:\\users\\selin\\onedrive\\desktop\\proje_stok\\stok_\\products_management.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:products_management.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|c:\\users\\selin\\onedrive\\desktop\\proje_stok\\stok_\\usr_ware_house.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:usr_ware_house.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|c:\\users\\selin\\onedrive\\desktop\\proje_stok\\stok_\\user_management.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:user_management.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|c:\\users\\selin\\onedrive\\desktop\\proje_stok\\stok_\\usr_contorl_class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:usr_contorl_class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|c:\\users\\selin\\onedrive\\desktop\\proje_stok\\stok_\\usr_category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:usr_category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|c:\\users\\selin\\onedrive\\desktop\\proje_stok\\stok_\\usr_reports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:usr_reports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|c:\\users\\selin\\onedrive\\desktop\\proje_stok\\stok_\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|c:\\users\\selin\\onedrive\\desktop\\proje_stok\\stok_\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|c:\\users\\selin\\onedrive\\desktop\\proje_son\\stok_\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|c:\\users\\selin\\onedrive\\desktop\\proje_stok\\stok_\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|c:\\users\\selin\\onedrive\\desktop\\proje_stok\\stok_\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\form2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:form2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|c:\\users\\selin\\onedrive\\desktop\\proje_stok\\stok_\\usr_category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:usr_category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\sql_classes\\user_repo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:classes\\sql_classes\\user_repo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|c:\\users\\selin\\onedrive\\desktop\\proje_stok\\stok_\\classes\\suppliers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:classes\\suppliers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|c:\\users\\selin\\onedrive\\desktop\\proje_stok\\stok_\\usr_category.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:usr_category.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|c:\\users\\selin\\onedrive\\desktop\\proje_stok\\stok_\\classes\\sql_classes\\category_repo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:classes\\sql_classes\\category_repo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|c:\\users\\selin\\onedrive\\desktop\\proje_stok\\stok_\\usr_ware_house.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:usr_ware_house.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|c:\\users\\selin\\onedrive\\desktop\\proje_stok\\stok_\\usr_reports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:usr_reports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|c:\\users\\selin\\onedrive\\desktop\\proje_stok\\stok_\\classes\\categories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:classes\\categories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|c:\\users\\selin\\onedrive\\desktop\\proje_stok\\stok_\\add_product_to_warehouse_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:add_product_to_warehouse_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|c:\\users\\selin\\onedrive\\desktop\\proje_stok\\stok_\\classes\\current_user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:classes\\current_user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|c:\\users\\selin\\onedrive\\desktop\\proje_stok\\stok_\\classes\\admin_user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:classes\\admin_user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|c:\\users\\selin\\onedrive\\desktop\\proje_stok\\stok_\\classes\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:classes\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|c:\\users\\selin\\onedrive\\desktop\\proje_stok\\stok_\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|c:\\users\\selin\\onedrive\\desktop\\proje_stok\\stok_\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|c:\\users\\selin\\onedrive\\desktop\\proje_stok\\stok_\\classes\\sql_classes\\graphics_repo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:classes\\sql_classes\\graphics_repo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|c:\\users\\selin\\onedrive\\desktop\\proje_stok\\stok_\\classes\\sql_classes\\stock_transacition_repo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:classes\\sql_classes\\stock_transacition_repo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|c:\\users\\selin\\onedrive\\desktop\\proje_stok\\stok_\\classes\\sql_classes\\warehouse_repo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:classes\\sql_classes\\warehouse_repo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|c:\\users\\selin\\onedrive\\desktop\\proje_stok\\stok_\\classes\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:classes\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|c:\\users\\selin\\onedrive\\desktop\\proje_stok\\stok_\\classes\\stock_transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:classes\\stock_transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|c:\\users\\selin\\onedrive\\desktop\\proje_stok\\stok_\\classes\\ware_house.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:classes\\ware_house.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|c:\\users\\selin\\onedrive\\desktop\\proje_stok\\stok_\\add_product_to_warehouse_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:add_product_to_warehouse_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|c:\\users\\selin\\onedrive\\desktop\\proje_stok\\stok_\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|c:\\users\\selin\\onedrive\\desktop\\proje_stok\\stok_\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|c:\\users\\selin\\onedrive\\desktop\\proje_stok\\stok_\\sql_codes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:sql_codes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|c:\\users\\selin\\onedrive\\desktop\\proje_stok\\stok_\\stock_transacition_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:stock_transacition_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|c:\\users\\selin\\onedrive\\desktop\\proje_stok\\stok_\\stock_transacition_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:stock_transacition_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|c:\\users\\selin\\onedrive\\desktop\\proje_stok\\stok_\\user_management.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\user_management.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:user_management.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|c:\\users\\selin\\onedrive\\desktop\\proje_stok\\stok_\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\sql_classes\\role_repo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:classes\\sql_classes\\role_repo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\sql_classes\\main_repo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:classes\\sql_classes\\main_repo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\usr_ware_house.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:usr_ware_house.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\usr_supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:usr_supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\usr_stock_logs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:usr_stock_logs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\usr_role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:usr_role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\usr_reports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:usr_reports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\usr_contorl_class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:usr_contorl_class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\usr_category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:usr_category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\stock_transacition_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:stock_transacition_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\sql_codes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:sql_codes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\remove_product_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:remove_product_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\products_management.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:products_management.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\low_stock_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:low_stock_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\products_management.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:products_management.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\add_product_to_warehouse_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:add_product_to_warehouse_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\add_product_to_warehouse_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:add_product_to_warehouse_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\user_management.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:user_management.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\stock_transacition_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:stock_transacition_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\remove_product_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:remove_product_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\low_stock_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:low_stock_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\ware_house.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:classes\\ware_house.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:classes\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\suppliers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:classes\\suppliers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\stock_transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:classes\\stock_transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:classes\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:classes\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\current_user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:classes\\current_user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\categories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:classes\\categories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\admin_user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:classes\\admin_user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\sql_classes\\warehouse_repo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:classes\\sql_classes\\warehouse_repo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\sql_classes\\supplier_repo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:classes\\sql_classes\\supplier_repo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\sql_classes\\stock_transacition_repo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:classes\\sql_classes\\stock_transacition_repo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\sql_classes\\products_repo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:classes\\sql_classes\\products_repo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\sql_classes\\graphics_repo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:classes\\sql_classes\\graphics_repo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\sql_classes\\db_helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:classes\\sql_classes\\db_helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\sql_classes\\category_repo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:classes\\sql_classes\\category_repo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\user_management.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:user_management.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\usr_role.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:usr_role.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\usr_supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:usr_supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\usr_supplier.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:usr_supplier.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\usr_supplier.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:usr_supplier.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\usr_ware_house.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:usr_ware_house.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\usr_category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:usr_category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\usr_reports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:usr_reports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\usr_category.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:usr_category.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\usr_ware_house.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:usr_ware_house.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}|stok_.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -186,7 +246,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -203,185 +263,70 @@
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "usr_supplier.resx",
-              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\usr_supplier.resx",
-              "RelativeDocumentMoniker": "usr_supplier.resx",
-              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\usr_supplier.resx",
-              "RelativeToolTip": "usr_supplier.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-12-13T13:48:40.468Z",
-              "EditorCaption": ""
+              "Title": "main_repo.cs",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\sql_classes\\main_repo.cs",
+              "RelativeDocumentMoniker": "classes\\sql_classes\\main_repo.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\sql_classes\\main_repo.cs",
+              "RelativeToolTip": "classes\\sql_classes\\main_repo.cs",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAIwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T13:13:21.578Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "products_management.cs",
-              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\products_management.cs",
-              "RelativeDocumentMoniker": "products_management.cs",
-              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\products_management.cs",
-              "RelativeToolTip": "products_management.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAuwCAAAAAMAAAA",
+              "Title": "role_repo.cs",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\sql_classes\\role_repo.cs",
+              "RelativeDocumentMoniker": "classes\\sql_classes\\role_repo.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\sql_classes\\role_repo.cs",
+              "RelativeToolTip": "classes\\sql_classes\\role_repo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAI0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T11:09:52.76Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "usr_supplier.cs [Tasar\u0131m]",
-              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\usr_supplier.cs",
-              "RelativeDocumentMoniker": "usr_supplier.cs",
-              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\usr_supplier.cs [Tasar\u0131m]",
-              "RelativeToolTip": "usr_supplier.cs [Tasar\u0131m]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T11:46:11.599Z",
-              "EditorCaption": " [Tasar\u0131m]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "usr_supplier.cs",
-              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\usr_supplier.cs",
-              "RelativeDocumentMoniker": "usr_supplier.cs",
-              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\usr_supplier.cs",
-              "RelativeToolTip": "usr_supplier.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGAAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T11:46:41.899Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "supplier_repo.cs",
-              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\classes\\sql_classes\\supplier_repo.cs",
-              "RelativeDocumentMoniker": "classes\\sql_classes\\supplier_repo.cs",
-              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\classes\\sql_classes\\supplier_repo.cs",
-              "RelativeToolTip": "classes\\sql_classes\\supplier_repo.cs",
-              "ViewState": "AQIAAFEAAAAAAAAAAAAowEcAAAA9AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T11:49:46.332Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Products_repo.cs",
-              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\classes\\sql_classes\\Products_repo.cs",
-              "RelativeDocumentMoniker": "classes\\sql_classes\\Products_repo.cs",
-              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\classes\\sql_classes\\Products_repo.cs",
-              "RelativeToolTip": "classes\\sql_classes\\Products_repo.cs",
-              "ViewState": "AQIAAGMAAAAAAAAAAAAowAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T11:12:33.624Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "usr_supplier.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\usr_supplier.Designer.cs",
-              "RelativeDocumentMoniker": "usr_supplier.Designer.cs",
-              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\usr_supplier.Designer.cs",
-              "RelativeToolTip": "usr_supplier.Designer.cs",
-              "ViewState": "AQIAAO8AAAAAAAAAAAAAAMcAAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T12:40:02.365Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "usr_ware_house.cs [Tasar\u0131m]",
-              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\usr_ware_house.cs",
-              "RelativeDocumentMoniker": "usr_ware_house.cs",
-              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\usr_ware_house.cs [Tasar\u0131m]",
-              "RelativeToolTip": "usr_ware_house.cs [Tasar\u0131m]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T13:09:05.316Z",
-              "EditorCaption": " [Tasar\u0131m]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "products_management.cs [Tasar\u0131m]",
-              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\products_management.cs",
-              "RelativeDocumentMoniker": "products_management.cs",
-              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\products_management.cs [Tasar\u0131m]",
-              "RelativeToolTip": "products_management.cs [Tasar\u0131m]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T11:09:50.567Z",
-              "EditorCaption": " [Tasar\u0131m]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "user_management.cs [Tasar\u0131m]",
-              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\user_management.cs",
-              "RelativeDocumentMoniker": "user_management.cs",
-              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\user_management.cs [Tasar\u0131m]",
-              "RelativeToolTip": "user_management.cs [Tasar\u0131m]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T11:09:32.458Z",
-              "EditorCaption": " [Tasar\u0131m]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "usr_contorl_class.cs",
-              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\usr_contorl_class.cs",
-              "RelativeDocumentMoniker": "usr_contorl_class.cs",
-              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\usr_contorl_class.cs",
-              "RelativeToolTip": "usr_contorl_class.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T11:09:03.056Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-28T13:37:48.147Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "usr_category.cs [Tasar\u0131m]",
-              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\usr_category.cs",
-              "RelativeDocumentMoniker": "usr_category.cs",
-              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\usr_category.cs [Tasar\u0131m]",
-              "RelativeToolTip": "usr_category.cs [Tasar\u0131m]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T11:09:07.979Z",
-              "EditorCaption": " [Tasar\u0131m]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "usr_reports.cs [Tasar\u0131m]",
-              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\usr_reports.cs",
+              "Title": "usr_reports.cs",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\usr_reports.cs",
               "RelativeDocumentMoniker": "usr_reports.cs",
-              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\usr_reports.cs [Tasar\u0131m]",
-              "RelativeToolTip": "usr_reports.cs [Tasar\u0131m]",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\usr_reports.cs",
+              "RelativeToolTip": "usr_reports.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T11:08:53.693Z",
-              "EditorCaption": " [Tasar\u0131m]"
+              "WhenOpened": "2024-12-13T11:08:58.292Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Form2.cs",
-              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\Form2.cs",
-              "RelativeDocumentMoniker": "Form2.cs",
-              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\Form2.cs",
-              "RelativeToolTip": "Form2.cs",
-              "ViewState": "AQIAAHYAAAAAAAAAAAAMwIIAAAAMAAAA",
+              "DocumentIndex": 8,
+              "Title": "usr_supplier.cs",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\usr_supplier.cs",
+              "RelativeDocumentMoniker": "usr_supplier.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\usr_supplier.cs",
+              "RelativeToolTip": "usr_supplier.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T11:10:23.391Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T11:46:41.899Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 3,
+              "Title": "User_repo.cs",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\sql_classes\\User_repo.cs",
+              "RelativeDocumentMoniker": "classes\\sql_classes\\User_repo.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\sql_classes\\User_repo.cs",
+              "RelativeToolTip": "classes\\sql_classes\\User_repo.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAUwCgAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T13:38:41.398Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Form2.cs [Tasar\u0131m]",
-              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\Form2.cs",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\Form2.cs",
               "RelativeDocumentMoniker": "Form2.cs",
-              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\Form2.cs [Tasar\u0131m]",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\Form2.cs [Tasar\u0131m]",
               "RelativeToolTip": "Form2.cs [Tasar\u0131m]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-13T11:10:21.926Z",
@@ -389,376 +334,627 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "UserControl1.cs [Tasar\u0131m]",
-              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\UserControl1.cs",
-              "RelativeDocumentMoniker": "UserControl1.cs",
-              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\UserControl1.cs [Tasar\u0131m]",
-              "RelativeToolTip": "UserControl1.cs [Tasar\u0131m]",
+              "DocumentIndex": 0,
+              "Title": "Form2.cs",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\Form2.cs",
+              "RelativeDocumentMoniker": "Form2.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\Form2.cs",
+              "RelativeToolTip": "Form2.cs",
+              "ViewState": "AQIAAIsAAAAAAAAAAAAkwMIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T11:09:27.183Z",
-              "EditorCaption": " [Tasar\u0131m]"
+              "WhenOpened": "2024-12-13T11:10:23.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form2.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\Form2.Designer.cs",
+              "RelativeDocumentMoniker": "Form2.Designer.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\Form2.Designer.cs",
+              "RelativeToolTip": "Form2.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAMIAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T13:56:11.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "usr_contorl_class.cs",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\usr_contorl_class.cs",
+              "RelativeDocumentMoniker": "usr_contorl_class.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\usr_contorl_class.cs",
+              "RelativeToolTip": "usr_contorl_class.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T11:09:03.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "usr_category.cs",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\usr_category.cs",
+              "RelativeDocumentMoniker": "usr_category.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\usr_category.cs",
+              "RelativeToolTip": "usr_category.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T11:09:10.495Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserControl1.cs",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\UserControl1.cs",
+              "RelativeDocumentMoniker": "UserControl1.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\UserControl1.cs",
+              "RelativeToolTip": "UserControl1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T11:09:28.738Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "user_management.cs",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\user_management.cs",
+              "RelativeDocumentMoniker": "user_management.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\user_management.cs",
+              "RelativeToolTip": "user_management.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAwBEAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T11:09:34.567Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "usr_stock_logs.cs",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\usr_stock_logs.cs",
+              "RelativeDocumentMoniker": "usr_stock_logs.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\usr_stock_logs.cs",
+              "RelativeToolTip": "usr_stock_logs.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T14:04:27.719Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "usr_ware_house.cs",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\usr_ware_house.cs",
+              "RelativeDocumentMoniker": "usr_ware_house.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\usr_ware_house.cs",
+              "RelativeToolTip": "usr_ware_house.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T14:04:55.411Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "stock_transacition_form.cs",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\stock_transacition_form.cs",
+              "RelativeDocumentMoniker": "stock_transacition_form.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\stock_transacition_form.cs",
+              "RelativeToolTip": "stock_transacition_form.cs",
+              "ViewState": "AQIAAG8AAAAAAAAAAAAywB4AAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T11:09:39.876Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "usr_role.cs",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\usr_role.cs",
+              "RelativeDocumentMoniker": "usr_role.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\usr_role.cs",
+              "RelativeToolTip": "usr_role.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T13:41:31.184Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "packages.config",
-              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\packages.config",
-              "RelativeDocumentMoniker": "packages.config",
-              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\packages.config",
-              "RelativeToolTip": "packages.config",
+              "Title": "sql_codes.cs",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\sql_codes.cs",
+              "RelativeDocumentMoniker": "sql_codes.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\sql_codes.cs",
+              "RelativeToolTip": "sql_codes.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-12-13T11:10:18.028Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "category_repo.cs",
-              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\classes\\sql_classes\\category_repo.cs",
-              "RelativeDocumentMoniker": "classes\\sql_classes\\category_repo.cs",
-              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\classes\\sql_classes\\category_repo.cs",
-              "RelativeToolTip": "classes\\sql_classes\\category_repo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T11:13:05.683Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T11:09:45.556Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "usr_category.cs",
-              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\usr_category.cs",
-              "RelativeDocumentMoniker": "usr_category.cs",
-              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\usr_category.cs",
-              "RelativeToolTip": "usr_category.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAE8AAAA4AAAA",
+              "Title": "remove_product_form.cs",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\remove_product_form.cs",
+              "RelativeDocumentMoniker": "remove_product_form.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\remove_product_form.cs",
+              "RelativeToolTip": "remove_product_form.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T11:09:10.495Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Suppliers.cs",
-              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\classes\\Suppliers.cs",
-              "RelativeDocumentMoniker": "classes\\Suppliers.cs",
-              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\classes\\Suppliers.cs",
-              "RelativeToolTip": "classes\\Suppliers.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T11:56:04.669Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-28T14:00:41.904Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
-              "Title": "usr_category.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\usr_category.Designer.cs",
-              "RelativeDocumentMoniker": "usr_category.Designer.cs",
-              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\usr_category.Designer.cs",
-              "RelativeToolTip": "usr_category.Designer.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Title": "products_management.cs",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\products_management.cs",
+              "RelativeDocumentMoniker": "products_management.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\products_management.cs",
+              "RelativeToolTip": "products_management.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T11:58:13.013Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T11:09:52.76Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "low_stock_form.cs",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\low_stock_form.cs",
+              "RelativeDocumentMoniker": "low_stock_form.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\low_stock_form.cs",
+              "RelativeToolTip": "low_stock_form.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T13:59:53.192Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 21,
-              "Title": "usr_ware_house.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\usr_ware_house.Designer.cs",
-              "RelativeDocumentMoniker": "usr_ware_house.Designer.cs",
-              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\usr_ware_house.Designer.cs",
-              "RelativeToolTip": "usr_ware_house.Designer.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Title": "products_management.cs [Tasar\u0131m]",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\products_management.cs",
+              "RelativeDocumentMoniker": "products_management.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\products_management.cs [Tasar\u0131m]",
+              "RelativeToolTip": "products_management.cs [Tasar\u0131m]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T11:58:19.79Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T11:09:50.567Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T11:09:48.318Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 22,
-              "Title": "usr_reports.cs",
-              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\usr_reports.cs",
-              "RelativeDocumentMoniker": "usr_reports.cs",
-              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\usr_reports.cs",
-              "RelativeToolTip": "usr_reports.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T11:08:58.292Z",
-              "EditorCaption": ""
+              "Title": "packages.config",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\packages.config",
+              "RelativeDocumentMoniker": "packages.config",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\packages.config",
+              "RelativeToolTip": "packages.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-12-13T11:10:18.028Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 23,
-              "Title": "Categories.cs",
-              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\classes\\Categories.cs",
-              "RelativeDocumentMoniker": "classes\\Categories.cs",
-              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\classes\\Categories.cs",
-              "RelativeToolTip": "classes\\Categories.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAYwCwAAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T11:12:03.441Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "add_product_to_warehouse_form.cs [Tasar\u0131m]",
-              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\add_product_to_warehouse_form.cs",
-              "RelativeDocumentMoniker": "add_product_to_warehouse_form.cs",
-              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\add_product_to_warehouse_form.cs [Tasar\u0131m]",
-              "RelativeToolTip": "add_product_to_warehouse_form.cs [Tasar\u0131m]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T11:10:56.11Z",
-              "EditorCaption": " [Tasar\u0131m]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "current_user.cs",
-              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\classes\\current_user.cs",
-              "RelativeDocumentMoniker": "classes\\current_user.cs",
-              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\classes\\current_user.cs",
-              "RelativeToolTip": "classes\\current_user.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T11:11:59.804Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T11:10:35.462Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 26,
-              "Title": "Admin_user.cs",
-              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\classes\\Admin_user.cs",
-              "RelativeDocumentMoniker": "classes\\Admin_user.cs",
-              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\classes\\Admin_user.cs",
-              "RelativeToolTip": "classes\\Admin_user.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "add_product_to_warehouse_form.cs [Tasar\u0131m]",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\add_product_to_warehouse_form.cs",
+              "RelativeDocumentMoniker": "add_product_to_warehouse_form.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\add_product_to_warehouse_form.cs [Tasar\u0131m]",
+              "RelativeToolTip": "add_product_to_warehouse_form.cs [Tasar\u0131m]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T11:07:43.962Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T11:10:56.11Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "Form1.cs [Tasar\u0131m]",
-              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\Form1.cs [Tasar\u0131m]",
-              "RelativeToolTip": "Form1.cs [Tasar\u0131m]",
+              "DocumentIndex": 25,
+              "Title": "add_product_to_warehouse_form.cs",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\add_product_to_warehouse_form.cs",
+              "RelativeDocumentMoniker": "add_product_to_warehouse_form.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\add_product_to_warehouse_form.cs",
+              "RelativeToolTip": "add_product_to_warehouse_form.cs",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAwwBoAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T11:10:33.744Z",
-              "EditorCaption": " [Tasar\u0131m]"
+              "WhenOpened": "2024-12-13T11:10:57.625Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 27,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\classes\\User.cs",
-              "RelativeDocumentMoniker": "classes\\User.cs",
-              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\classes\\User.cs",
-              "RelativeToolTip": "classes\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "user_management.cs [Tasar\u0131m]",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\user_management.cs",
+              "RelativeDocumentMoniker": "user_management.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\user_management.cs [Tasar\u0131m]",
+              "RelativeToolTip": "user_management.cs [Tasar\u0131m]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T11:11:50.983Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T11:09:32.458Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Form1.cs [Tasar\u0131m]",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\Form1.cs [Tasar\u0131m]",
+              "RelativeToolTip": "Form1.cs [Tasar\u0131m]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T11:10:33.744Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 28,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\Form1.cs",
-              "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAQwE8AAAAAAAAA",
+              "Title": "stock_transacition_form.cs [Tasar\u0131m]",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\stock_transacition_form.cs",
+              "RelativeDocumentMoniker": "stock_transacition_form.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\stock_transacition_form.cs [Tasar\u0131m]",
+              "RelativeToolTip": "stock_transacition_form.cs [Tasar\u0131m]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T11:10:35.462Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T11:09:38.172Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "Warehouse_repo.cs",
-              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\classes\\sql_classes\\Warehouse_repo.cs",
-              "RelativeDocumentMoniker": "classes\\sql_classes\\Warehouse_repo.cs",
-              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\classes\\sql_classes\\Warehouse_repo.cs",
-              "RelativeToolTip": "classes\\sql_classes\\Warehouse_repo.cs",
-              "ViewState": "AQIAAHMAAAAAAAAAAAA/wAAAAAAAAAAA",
+              "DocumentIndex": 29,
+              "Title": "remove_product_form.cs [Tasar\u0131m]",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\remove_product_form.cs",
+              "RelativeDocumentMoniker": "remove_product_form.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\remove_product_form.cs [Tasar\u0131m]",
+              "RelativeToolTip": "remove_product_form.cs [Tasar\u0131m]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T11:12:08.151Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "Stock_transacition_repo.cs",
-              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\classes\\sql_classes\\Stock_transacition_repo.cs",
-              "RelativeDocumentMoniker": "classes\\sql_classes\\Stock_transacition_repo.cs",
-              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\classes\\sql_classes\\Stock_transacition_repo.cs",
-              "RelativeToolTip": "classes\\sql_classes\\Stock_transacition_repo.cs",
-              "ViewState": "AQIAAFsAAAAAAAAAAAAkwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T11:12:22.472Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-28T13:43:47.048Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 30,
-              "Title": "Graphics_repo.cs",
-              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\classes\\sql_classes\\Graphics_repo.cs",
-              "RelativeDocumentMoniker": "classes\\sql_classes\\Graphics_repo.cs",
-              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\classes\\sql_classes\\Graphics_repo.cs",
-              "RelativeToolTip": "classes\\sql_classes\\Graphics_repo.cs",
-              "ViewState": "AQIAAIcAAAAAAAAAAAAowAAAAAAAAAAA",
+              "Title": "low_stock_form.cs [Tasar\u0131m]",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\low_stock_form.cs",
+              "RelativeDocumentMoniker": "low_stock_form.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\low_stock_form.cs [Tasar\u0131m]",
+              "RelativeToolTip": "low_stock_form.cs [Tasar\u0131m]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T11:12:46.99Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-28T13:52:22.574Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Ware_house.cs",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\Ware_house.cs",
+              "RelativeDocumentMoniker": "classes\\Ware_house.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\Ware_house.cs",
+              "RelativeToolTip": "classes\\Ware_house.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T11:11:46.613Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\User.cs",
+              "RelativeDocumentMoniker": "classes\\User.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\User.cs",
+              "RelativeToolTip": "classes\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T11:11:50.983Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 33,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\classes\\Product.cs",
-              "RelativeDocumentMoniker": "classes\\Product.cs",
-              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\classes\\Product.cs",
-              "RelativeToolTip": "classes\\Product.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Title": "Suppliers.cs",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\Suppliers.cs",
+              "RelativeDocumentMoniker": "classes\\Suppliers.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\Suppliers.cs",
+              "RelativeToolTip": "classes\\Suppliers.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T11:11:54.482Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T11:56:04.669Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 34,
               "Title": "Stock_transaction.cs",
-              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\classes\\Stock_transaction.cs",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\Stock_transaction.cs",
               "RelativeDocumentMoniker": "classes\\Stock_transaction.cs",
-              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\classes\\Stock_transaction.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\Stock_transaction.cs",
               "RelativeToolTip": "classes\\Stock_transaction.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T11:11:52.598Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T11:11:52.598Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 35,
-              "Title": "Ware_house.cs",
-              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\classes\\Ware_house.cs",
-              "RelativeDocumentMoniker": "classes\\Ware_house.cs",
-              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\classes\\Ware_house.cs",
-              "RelativeToolTip": "classes\\Ware_house.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "Roles.cs",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\Roles.cs",
+              "RelativeDocumentMoniker": "classes\\Roles.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\Roles.cs",
+              "RelativeToolTip": "classes\\Roles.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T11:11:46.613Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-28T13:39:55.802Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 36,
-              "Title": "add_product_to_warehouse_form.cs",
-              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\add_product_to_warehouse_form.cs",
-              "RelativeDocumentMoniker": "add_product_to_warehouse_form.cs",
-              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\add_product_to_warehouse_form.cs",
-              "RelativeToolTip": "add_product_to_warehouse_form.cs",
-              "ViewState": "AQIAADQAAAAAAAAAAAAkwBYAAABBAAAA",
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\Product.cs",
+              "RelativeDocumentMoniker": "classes\\Product.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\Product.cs",
+              "RelativeToolTip": "classes\\Product.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAA3wAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T11:10:57.625Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T11:11:54.482Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 37,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\App.config",
-              "RelativeDocumentMoniker": "App.config",
-              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\App.config",
-              "RelativeToolTip": "App.config",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-12-13T11:10:54.21Z",
-              "EditorCaption": ""
+              "Title": "current_user.cs",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\current_user.cs",
+              "RelativeDocumentMoniker": "classes\\current_user.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\current_user.cs",
+              "RelativeToolTip": "classes\\current_user.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T11:11:59.804Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 38,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\Program.cs",
-              "RelativeToolTip": "Program.cs",
+              "Title": "Categories.cs",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\Categories.cs",
+              "RelativeDocumentMoniker": "classes\\Categories.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\Categories.cs",
+              "RelativeToolTip": "classes\\Categories.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T11:09:48.318Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T11:12:03.441Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 39,
-              "Title": "sql_codes.cs",
-              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\sql_codes.cs",
-              "RelativeDocumentMoniker": "sql_codes.cs",
-              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\sql_codes.cs",
-              "RelativeToolTip": "sql_codes.cs",
+              "Title": "Admin_user.cs",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\Admin_user.cs",
+              "RelativeDocumentMoniker": "classes\\Admin_user.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\Admin_user.cs",
+              "RelativeToolTip": "classes\\Admin_user.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T11:09:45.556Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T11:07:43.962Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 40,
-              "Title": "stock_transacition_form.cs",
-              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\stock_transacition_form.cs",
-              "RelativeDocumentMoniker": "stock_transacition_form.cs",
-              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\stock_transacition_form.cs",
-              "RelativeToolTip": "stock_transacition_form.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAkwDQAAAAAAAAA",
+              "Title": "Warehouse_repo.cs",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\sql_classes\\Warehouse_repo.cs",
+              "RelativeDocumentMoniker": "classes\\sql_classes\\Warehouse_repo.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\sql_classes\\Warehouse_repo.cs",
+              "RelativeToolTip": "classes\\sql_classes\\Warehouse_repo.cs",
+              "ViewState": "AQIAAIUAAAAAAAAAAAAwwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T11:09:39.876Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T11:12:08.151Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 41,
-              "Title": "stock_transacition_form.cs [Tasar\u0131m]",
-              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\stock_transacition_form.cs",
-              "RelativeDocumentMoniker": "stock_transacition_form.cs",
-              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\stock_transacition_form.cs [Tasar\u0131m]",
-              "RelativeToolTip": "stock_transacition_form.cs [Tasar\u0131m]",
+              "Title": "supplier_repo.cs",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\sql_classes\\supplier_repo.cs",
+              "RelativeDocumentMoniker": "classes\\sql_classes\\supplier_repo.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\sql_classes\\supplier_repo.cs",
+              "RelativeToolTip": "classes\\sql_classes\\supplier_repo.cs",
+              "ViewState": "AQIAAGUAAAAAAAAAAAAswIYAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T11:09:38.172Z",
-              "EditorCaption": " [Tasar\u0131m]"
+              "WhenOpened": "2024-12-13T11:49:46.332Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 42,
-              "Title": "user_management.cs",
-              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\user_management.cs",
-              "RelativeDocumentMoniker": "user_management.cs",
-              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\user_management.cs",
-              "RelativeToolTip": "user_management.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAAAAAA",
+              "Title": "Stock_transacition_repo.cs",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\sql_classes\\Stock_transacition_repo.cs",
+              "RelativeDocumentMoniker": "classes\\sql_classes\\Stock_transacition_repo.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\sql_classes\\Stock_transacition_repo.cs",
+              "RelativeToolTip": "classes\\sql_classes\\Stock_transacition_repo.cs",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAowAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T11:09:34.567Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T11:12:22.472Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 43,
-              "Title": "UserControl1.cs",
-              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\UserControl1.cs",
-              "RelativeDocumentMoniker": "UserControl1.cs",
-              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_stok\\stok_\\UserControl1.cs",
-              "RelativeToolTip": "UserControl1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Title": "Products_repo.cs",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\sql_classes\\Products_repo.cs",
+              "RelativeDocumentMoniker": "classes\\sql_classes\\Products_repo.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\sql_classes\\Products_repo.cs",
+              "RelativeToolTip": "classes\\sql_classes\\Products_repo.cs",
+              "ViewState": "AQIAAJEAAAAAAAAAAADwvwAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T11:09:28.738Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T11:12:33.624Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Graphics_repo.cs",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\sql_classes\\Graphics_repo.cs",
+              "RelativeDocumentMoniker": "classes\\sql_classes\\Graphics_repo.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\sql_classes\\Graphics_repo.cs",
+              "RelativeToolTip": "classes\\sql_classes\\Graphics_repo.cs",
+              "ViewState": "AQIAAHUAAAAAAAAAAAAowAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T11:12:46.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Db_helper.cs",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\sql_classes\\Db_helper.cs",
+              "RelativeDocumentMoniker": "classes\\sql_classes\\Db_helper.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\sql_classes\\Db_helper.cs",
+              "RelativeToolTip": "classes\\sql_classes\\Db_helper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T13:01:07.204Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "category_repo.cs",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\sql_classes\\category_repo.cs",
+              "RelativeDocumentMoniker": "classes\\sql_classes\\category_repo.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\classes\\sql_classes\\category_repo.cs",
+              "RelativeToolTip": "classes\\sql_classes\\category_repo.cs",
+              "ViewState": "AQIAAGUAAAAAAAAAAAAswAsAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T11:13:05.683Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "UserControl1.cs [Tasar\u0131m]",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\UserControl1.cs",
+              "RelativeDocumentMoniker": "UserControl1.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\UserControl1.cs [Tasar\u0131m]",
+              "RelativeToolTip": "UserControl1.cs [Tasar\u0131m]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T11:09:27.183Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "user_management.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\user_management.Designer.cs",
+              "RelativeDocumentMoniker": "user_management.Designer.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\user_management.Designer.cs",
+              "RelativeToolTip": "user_management.Designer.cs",
+              "ViewState": "AQIAAAwBAAAAAAAAAAAowE4BAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T13:43:29Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "usr_role.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\usr_role.Designer.cs",
+              "RelativeDocumentMoniker": "usr_role.Designer.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\usr_role.Designer.cs",
+              "RelativeToolTip": "usr_role.Designer.cs",
+              "ViewState": "AQIAAKQAAAAAAAAAAAAowOYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T13:41:52.521Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "usr_supplier.resx",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\usr_supplier.resx",
+              "RelativeDocumentMoniker": "usr_supplier.resx",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\usr_supplier.resx",
+              "RelativeToolTip": "usr_supplier.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-12-13T13:48:40.468Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "usr_supplier.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\usr_supplier.cs",
+              "RelativeDocumentMoniker": "usr_supplier.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\usr_supplier.cs [Design]",
+              "RelativeToolTip": "usr_supplier.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T11:46:11.599Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "usr_supplier.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\usr_supplier.Designer.cs",
+              "RelativeDocumentMoniker": "usr_supplier.Designer.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\usr_supplier.Designer.cs",
+              "RelativeToolTip": "usr_supplier.Designer.cs",
+              "ViewState": "AQIAAO8AAAAAAAAAAAAAAMcAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T12:40:02.365Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "usr_ware_house.cs [Tasar\u0131m]",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\usr_ware_house.cs",
+              "RelativeDocumentMoniker": "usr_ware_house.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\usr_ware_house.cs [Tasar\u0131m]",
+              "RelativeToolTip": "usr_ware_house.cs [Tasar\u0131m]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T13:09:05.316Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "usr_category.cs [Tasar\u0131m]",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\usr_category.cs",
+              "RelativeDocumentMoniker": "usr_category.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\usr_category.cs [Tasar\u0131m]",
+              "RelativeToolTip": "usr_category.cs [Tasar\u0131m]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T11:09:07.979Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "usr_reports.cs [Tasar\u0131m]",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\usr_reports.cs",
+              "RelativeDocumentMoniker": "usr_reports.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\usr_reports.cs [Tasar\u0131m]",
+              "RelativeToolTip": "usr_reports.cs [Tasar\u0131m]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T11:08:53.693Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "usr_category.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\usr_category.Designer.cs",
+              "RelativeDocumentMoniker": "usr_category.Designer.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\usr_category.Designer.cs",
+              "RelativeToolTip": "usr_category.Designer.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T11:58:13.013Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "usr_ware_house.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\usr_ware_house.Designer.cs",
+              "RelativeDocumentMoniker": "usr_ware_house.Designer.cs",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\usr_ware_house.Designer.cs",
+              "RelativeToolTip": "usr_ware_house.Designer.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T11:58:19.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\App.config",
+              "RelativeDocumentMoniker": "App.config",
+              "ToolTip": "C:\\Users\\selin\\OneDrive\\Desktop\\proje_son\\stok_\\App.config",
+              "RelativeToolTip": "App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-12-13T11:10:54.21Z"
             }
           ]
         }
