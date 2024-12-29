@@ -15,7 +15,7 @@ namespace stok_
     public partial class usr_role : UserControl
     {
         Roles_repo role_repo = new Roles_repo("server=localHost;port=5432;" +
-           "Database=data_son;user Id=postgres; Password=12345");
+           "Database=data_son;user Id=postgres; Password=can12345");
         public usr_role()
         {
             InitializeComponent();
@@ -93,6 +93,31 @@ namespace stok_
         private void btn_clear_Click(object sender, EventArgs e)
         {
             txtbox_role_name.Text = string.Empty;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void data_grid_role_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtbox_role_name_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

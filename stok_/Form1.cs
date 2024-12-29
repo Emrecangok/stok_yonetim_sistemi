@@ -14,7 +14,7 @@ namespace stok_
         }
 
         NpgsqlConnection con = new NpgsqlConnection("server=localHost;port=5432;" +
-            "Database=data_son;user Id=postgres; Password=12345");
+            "Database=data_son;user Id=postgres; Password=can12345");
 
         private void btn_giris_Click(object sender, EventArgs e)
         {

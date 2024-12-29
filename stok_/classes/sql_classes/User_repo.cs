@@ -147,5 +147,32 @@ namespace stok_.classes.sql_classes
 
 
         }
+
+
+
+        public void LoadStockTransactionLogsForAutoComplete(TextBox textBox)
+        {
+            try
+            {
+                string query = "SELECT DISTINCT user_name FROM users ORDER BY user_name;";
+                DataTable dataTable = execute_query(query); // Veritabanından kullanıcı adlarını çek
+
+                AutoCompleteStringCollection userNames = new AutoCompleteStringCollection();
+
+                foreach (DataRow row in dataTable.Rows)
+                {
+                    userNames.Add(row["user_name"].ToString());
+                }
+
+                textBox.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+                textBox.AutoCompleteSource = AutoCompleteSource.CustomSource;
+                textBox.AutoCompleteCustomSource = userNames;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Kullanıcı logları yüklenirken bir hata oluştu: \n{ex.Message}", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
     }
 }

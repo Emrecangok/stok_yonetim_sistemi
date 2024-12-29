@@ -15,9 +15,9 @@ namespace stok_
     public partial class usr_user_management : UserControl
     {
         User_repo user_repo = new User_repo("server=localHost;port=5432;" +
-         "Database=data_son;user Id=postgres; Password=12345");
+         "Database=data_son;user Id=postgres; Password=can12345");
         Roles_repo role_repo = new Roles_repo("server=localHost;port=5432;" +
-          "Database=data_son;user Id=postgres; Password=12345");
+          "Database=data_son;user Id=postgres; Password=can12345");
         public usr_user_management()
         {
             InitializeComponent();

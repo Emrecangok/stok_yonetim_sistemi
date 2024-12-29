@@ -15,7 +15,7 @@ namespace stok_
     public partial class usr_supplier : UserControl
     {
         Supplier_repo sup_repo = new Supplier_repo("server=localHost;port=5432;" +
-           "Database=data_son;user Id=postgres; Password=12345");
+           "Database=data_son;user Id=postgres; Password=can12345");
         public usr_supplier()
         {
             InitializeComponent();

@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B36A5D06-DACA-45FA-B5D4-13E67BE8D85F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>stok_</RootNamespace>
+    <AssemblyName>stok_</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.7.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.HashCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.HashCode.1.1.1\lib\net461\Microsoft.Bcl.HashCode.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\lib\net461\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql, Version=7.0.6.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <HintPath>packages\Npgsql.7.0.6\lib\netstandard2.0\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Collections.Immutable.7.0.0\lib\net462\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Diagnostics.DiagnosticSource.6.0.0\lib\net461\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Text.Encodings.Web.7.0.0\lib\net462\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Text.Json.7.0.0\lib\net462\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Channels, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Channels.7.0.0\lib\net462\System.Threading.Channels.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="add_product_to_warehouse_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_product_to_warehouse_form.Designer.cs">
+      <DependentUpon>add_product_to_warehouse_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="classes\Admin_user.cs" />
+    <Compile Include="classes\Roles.cs" />
+    <Compile Include="classes\sql_classes\main_repo.cs" />
+    <Compile Include="classes\sql_classes\role_repo.cs" />
+    <Compile Include="classes\sql_classes\User_repo.cs" />
+    <Compile Include="classes\Suppliers.cs" />
+    <Compile Include="classes\Categories.cs" />
+    <Compile Include="classes\current_user.cs" />
+    <Compile Include="classes\Product.cs" />
+    <Compile Include="classes\sql_classes\supplier_repo.cs" />
+    <Compile Include="classes\sql_classes\category_repo.cs" />
+    <Compile Include="classes\sql_classes\Db_helper.cs" />
+    <Compile Include="classes\sql_classes\Graphics_repo.cs" />
+    <Compile Include="classes\sql_classes\Products_repo.cs" />
+    <Compile Include="classes\sql_classes\Stock_transacition_repo.cs" />
+    <Compile Include="classes\sql_classes\Warehouse_repo.cs" />
+    <Compile Include="classes\Stock_transaction.cs" />
+    <Compile Include="classes\User.cs" />
+    <Compile Include="classes\Ware_house.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="low_stock_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="low_stock_form.Designer.cs">
+      <DependentUpon>low_stock_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manager_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manager_form.Designer.cs">
+      <DependentUpon>manager_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="products_management.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="products_management.Designer.cs">
+      <DependentUpon>products_management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="remove_product_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="remove_product_form.Designer.cs">
+      <DependentUpon>remove_product_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sql_codes.cs" />
+    <Compile Include="stock_transacition_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stock_transacition_form.Designer.cs">
+      <DependentUpon>stock_transacition_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user_management.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="user_management.Designer.cs">
+      <DependentUpon>user_management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usr_role.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usr_role.Designer.cs">
+      <DependentUpon>usr_role.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usr_stock_logs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usr_stock_logs.Designer.cs">
+      <DependentUpon>usr_stock_logs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usr_supplier.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usr_supplier.Designer.cs">
+      <DependentUpon>usr_supplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usr_category.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usr_category.Designer.cs">
+      <DependentUpon>usr_category.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usr_contorl_class.cs" />
+    <Compile Include="usr_reports.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usr_reports.Designer.cs">
+      <DependentUpon>usr_reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usr_ware_house.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usr_ware_house.Designer.cs">
+      <DependentUpon>usr_ware_house.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="add_product_to_warehouse_form.resx">
+      <DependentUpon>add_product_to_warehouse_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="low_stock_form.resx">
+      <DependentUpon>low_stock_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manager_form.resx">
+      <DependentUpon>manager_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="products_management.resx">
+      <DependentUpon>products_management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="remove_product_form.resx">
+      <DependentUpon>remove_product_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stock_transacition_form.resx">
+      <DependentUpon>stock_transacition_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_management.resx">
+      <DependentUpon>user_management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usr_role.resx">
+      <DependentUpon>usr_role.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usr_stock_logs.resx">
+      <DependentUpon>usr_stock_logs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usr_supplier.resx">
+      <DependentUpon>usr_supplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usr_category.resx">
+      <DependentUpon>usr_category.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usr_reports.resx">
+      <DependentUpon>usr_reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usr_ware_house.resx">
+      <DependentUpon>usr_ware_house.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main_back_pic_0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delivery-box %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delivery-box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parcel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\product.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sale-tag %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sale-tag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock-market.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\team %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\team %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\team.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trend %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trend.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets" Condition="Exists('packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets'))" />
+  </Target>
+</Project>

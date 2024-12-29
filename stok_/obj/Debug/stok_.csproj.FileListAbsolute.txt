@@ -240,3 +240,4 @@ C:\Users\selin\OneDrive\Desktop\proje_son\stok_\obj\Debug\stok_.csproj.CoreCompi
 C:\Users\selin\OneDrive\Desktop\proje_son\stok_\obj\Debug\stok_.csproj.Up2Date
 C:\Users\selin\OneDrive\Desktop\proje_son\stok_\obj\Debug\stok_.exe
 C:\Users\selin\OneDrive\Desktop\proje_son\stok_\obj\Debug\stok_.pdb
+C:\Users\Emrecan\Desktop\stok_yonetim_sistemi\stok_\obj\Debug\stok_.usr_role.resources
